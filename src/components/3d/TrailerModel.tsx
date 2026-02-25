@@ -1,15 +1,33 @@
 "use client";
 
 import { useFrame } from "@react-three/fiber";
-import { useRef } from "react";
-import type { Mesh } from "three";
+import { Suspense, useRef } from "react";
+import type { Mesh, Group } from "three";
 import { TrailerData } from "@/data/trailers";
+import { useGLTF } from "@react-three/drei";
 
 interface Props {
   trailer: TrailerData;
 }
 
-export function TrailerModel({ trailer }: Props) {
+function GLTFModel({ url }: { url: string }) {
+  const { scene } = useGLTF(url);
+  const groupRef = useRef<Group>(null);
+
+  useFrame((state, delta) => {
+    if (groupRef.current) {
+      groupRef.current.rotation.y += delta * 0.2;
+    }
+  });
+
+  return (
+    <group ref={groupRef} position={[0, -0.5, 0]}>
+      <primitive object={scene} scale={1} />
+    </group>
+  );
+}
+
+function PlaceholderModel({ trailer }: Props) {
   const meshRef = useRef<Mesh>(null);
 
   useFrame((state, delta) => {
@@ -18,7 +36,6 @@ export function TrailerModel({ trailer }: Props) {
     }
   });
 
-  // Tạo một hình khối placeholder dựa trên loại rơ moóc
   const isTanker = trailer.type.includes("Tanker");
   const isLowboy = trailer.type.includes("Lowboy");
 
@@ -56,6 +73,22 @@ export function TrailerModel({ trailer }: Props) {
         <planeGeometry args={[20, 20]} />
         <meshStandardMaterial color="#0b1a30" transparent opacity={0.4} />
       </mesh>
+    </group>
+  );
+}
+
+export function TrailerModel({ trailer }: Props) {
+  const isRealModel = trailer.modelPath?.startsWith("/model/");
+
+  return (
+    <group>
+      {isRealModel ? (
+        <Suspense fallback={<PlaceholderModel trailer={trailer} />}>
+          <GLTFModel url={trailer.modelPath} />
+        </Suspense>
+      ) : (
+        <PlaceholderModel trailer={trailer} />
+      )}
     </group>
   );
 }

@@ -30,9 +30,7 @@ export const trailers: TrailerData[] = [
       width: "2.5m",
       capacity: "30 Tấn",
     },
-    modelPath: "/models/flatbed.glb", // Placeholder cho file 3D
-    sketchfabUrl:
-      "https://sketchfab.com/models/76998b4d82604bb7996768835dcaa276/embed?autostart=1&preload=1&transparent=1&ui_infos=0&ui_controls=0&ui_watermark=0&ui_hint=0",
+    modelPath: "/model/Mooc_flat.glb", // Dùng file 3D thật thay vì placeholder
   },
   {
     id: "tanker-02",

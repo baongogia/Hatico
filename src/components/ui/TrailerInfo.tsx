@@ -6,10 +6,9 @@ import { TrailerData } from "@/data/trailers";
 
 interface Props {
   trailer: TrailerData;
-  isInteracting?: boolean;
 }
 
-export function TrailerInfo({ trailer, isInteracting }: Props) {
+export function TrailerInfo({ trailer }: Props) {
   const [isCollapsed, setIsCollapsed] = useState(false);
 
   // Nếu người dùng đang thu gọn, chỉ hiển thị một nút nhỏ
@@ -20,8 +19,8 @@ export function TrailerInfo({ trailer, isInteracting }: Props) {
         key={`collapsed-${trailer.id}`}
         initial={{ opacity: 0, x: -20 }}
         animate={{
-          opacity: isInteracting ? 0.2 : 1,
-          x: isInteracting ? -10 : 0,
+          opacity: 1,
+          x: 0,
         }}
         exit={{ opacity: 0, x: -20 }}
         transition={{ duration: 0.4, ease: "easeOut" }}
@@ -67,8 +66,8 @@ export function TrailerInfo({ trailer, isInteracting }: Props) {
       key={`expanded-${trailer.id}`}
       initial={{ opacity: 0, x: -20 }}
       animate={{
-        opacity: isInteracting ? 0.15 : 1,
-        x: isInteracting ? -20 : 0,
+        opacity: 1,
+        x: 0,
       }}
       exit={{ opacity: 0, x: -20 }}
       transition={{ duration: 0.4, ease: "easeOut" }}
