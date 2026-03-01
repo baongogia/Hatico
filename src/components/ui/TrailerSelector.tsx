@@ -19,14 +19,14 @@ export function TrailerSelector({ trailers, selectedId, onSelect }: Props) {
           <button
             key={trailer.id}
             onClick={() => onSelect(trailer.id)}
-            className={`relative px-5 py-2.5 text-xs tracking-[0.15em] font-rajdhani font-bold uppercase transition-all duration-300 min-w-max rounded-lg
+            className={`relative px-5 py-2.5 text-xs tracking-[0.15em] font-inter font-bold uppercase transition-all duration-300 min-w-max rounded-lg
               ${isSelected ? "text-white" : "text-slate-500 hover:text-slate-300 hover:bg-slate-900/50"}
             `}
           >
             {isSelected && (
               <motion.div
                 layoutId="active-nav"
-                className="absolute inset-x-0 bottom-0 h-1 bg-primary-red shadow-[0_0_10px_rgba(211,47,47,0.8)]"
+                className="absolute inset-x-0 bottom-0 h-1 bg-tech-cyan shadow-[0_0_10px_rgba(0,229,255,0.8)]"
                 transition={{ type: "spring", stiffness: 400, damping: 30 }}
               />
             )}

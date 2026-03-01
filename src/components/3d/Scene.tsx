@@ -52,12 +52,15 @@ export const Scene = memo(function Scene({ trailer }: Props) {
           color="#000000"
         />
         <OrbitControls
+          makeDefault
           enablePan={false}
-          minPolarAngle={Math.PI / 4}
-          maxPolarAngle={Math.PI / 2}
-          minDistance={8}
-          maxDistance={14}
-          target={[1.5, 0, 0]}
+          enableDamping={true}
+          dampingFactor={0.05}
+          minPolarAngle={10 * (Math.PI / 180)} // 10 degrees (almost top)
+          maxPolarAngle={Math.PI / 1.8} // ~100 degrees (slightly below horizon)
+          minDistance={6}
+          maxDistance={15}
+          target={[0, 0, 0]}
         />
         <Environment preset="city" />
       </Canvas>

@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
-import { Teko, Rajdhani } from "next/font/google"; // Chọn font vuông vức, kỹ thuật
+import { Space_Grotesk, Inter } from "next/font/google"; // Chọn font hiện đại, hỗ trợ TV
 import "./globals.css";
 
 // Tạo font cho Tiêu đề (Header/Branding)
-const teko = Teko({
-  variable: "--font-teko",
-  subsets: ["latin"],
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-space-grotesk",
+  subsets: ["latin", "vietnamese"],
   weight: ["400", "500", "600", "700"],
 });
 
 // Tạo font cho Nội dung (Specs/Body text)
-const rajdhani = Rajdhani({
-  variable: "--font-rajdhani",
-  subsets: ["latin"],
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin", "vietnamese"],
   weight: ["400", "500", "600", "700"],
 });
 
@@ -30,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="vi">
       <body
-        className={`${teko.variable} ${rajdhani.variable} bg-[#040812] text-slate-100 antialiased h-screen overflow-hidden font-rajdhani`}
+        className={`${spaceGrotesk.variable} ${inter.variable} bg-[#040812] text-slate-100 antialiased h-screen overflow-hidden font-inter`}
       >
         {children}
       </body>

@@ -23,10 +23,10 @@ export default function Home() {
         <div className="group cursor-pointer flex items-center h-10 md:h-12">
           {/* Logo removed as per user request */}
         </div>
-        <nav className="hidden md:flex gap-8 lg:gap-12 text-xs md:text-sm font-bold text-slate-400 font-montserrat tracking-widest uppercase items-center h-10 md:h-12">
+        <nav className="hidden md:flex gap-8 lg:gap-12 mr-4 text-xs md:text-sm font-bold text-slate-400 font-montserrat tracking-widest uppercase items-center h-10 md:h-12">
           <a
             href="#"
-            className="hover:text-white transition-colors relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-[2px] after:bg-primary-red hover:after:w-full after:transition-all after:duration-300"
+            className="hover:text-white transition-colors relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-[2px] after:bg-tech-cyan hover:after:w-full after:transition-all after:duration-300"
           >
             SẢN PHẨM
           </a>

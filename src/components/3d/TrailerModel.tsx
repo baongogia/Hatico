@@ -14,12 +14,6 @@ function GLTFModel({ url }: { url: string }) {
   const { scene } = useGLTF(url);
   const groupRef = useRef<Group>(null);
 
-  useFrame((state, delta) => {
-    if (groupRef.current) {
-      groupRef.current.rotation.y += delta * 0.2;
-    }
-  });
-
   return (
     <group ref={groupRef} position={[0, -0.5, 0]}>
       <primitive object={scene} scale={1} />
@@ -29,12 +23,6 @@ function GLTFModel({ url }: { url: string }) {
 
 function PlaceholderModel({ trailer }: Props) {
   const meshRef = useRef<Mesh>(null);
-
-  useFrame((state, delta) => {
-    if (meshRef.current) {
-      meshRef.current.rotation.y += delta * 0.2;
-    }
-  });
 
   const isTanker = trailer.type.includes("Tanker");
   const isLowboy = trailer.type.includes("Lowboy");

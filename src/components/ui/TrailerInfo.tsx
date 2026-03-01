@@ -47,10 +47,10 @@ export function TrailerInfo({ trailer }: Props) {
             </svg>
           </div>
           <div className="text-left hidden sm:block">
-            <h2 className="text-[10px] text-slate-400 uppercase tracking-widest font-rajdhani">
+            <h2 className="text-[10px] text-slate-400 uppercase tracking-widest font-inter">
               {trailer.type}
             </h2>
-            <h1 className="text-lg uppercase font-bold text-white font-teko leading-none">
+            <h1 className="text-lg uppercase font-bold text-white font-space-grotesk leading-none">
               {trailer.name}
             </h1>
           </div>
@@ -71,7 +71,7 @@ export function TrailerInfo({ trailer }: Props) {
       }}
       exit={{ opacity: 0, x: -20 }}
       transition={{ duration: 0.4, ease: "easeOut" }}
-      className="flex flex-col gap-3 w-[280px] md:w-[360px] h-full pointer-events-auto relative bg-linear-to-br from-black/80 to-black/50 backdrop-blur-2xl border border-white/10 p-4 pt-14 rounded-lg shadow-[0_8px_32px_rgba(0,0,0,0.5)] backdrop-saturate-150 overflow-y-auto no-scrollbar shrink-0"
+      className="flex flex-col gap-3 w-[320px] md:w-[420px] h-full pointer-events-auto relative bg-linear-to-br from-black/80 to-black/50 backdrop-blur-2xl border border-white/10 p-4 pt-14 rounded-lg shadow-[0_8px_32px_rgba(0,0,0,0.5)] backdrop-saturate-150 overflow-y-auto no-scrollbar shrink-0"
     >
       {/* Nút Thu gọn (Collapse) */}
       <button
@@ -98,16 +98,16 @@ export function TrailerInfo({ trailer }: Props) {
       <div className="pr-10">
         <div className="flex items-center gap-3 mb-1">
           <div className="w-6 h-[2px] bg-slate-400"></div>
-          <h2 className="text-[11px] uppercase tracking-[0.2em] text-slate-300 font-semibold font-rajdhani">
+          <h2 className="text-[11px] uppercase tracking-[0.2em] text-slate-300 font-semibold font-inter">
             {trailer.type}
           </h2>
         </div>
-        <h1 className="text-4xl md:text-5xl uppercase leading-[0.9] font-black text-white font-teko tracking-wide drop-shadow-md">
+        <h1 className="text-4xl md:text-5xl uppercase leading-[1.1] font-black text-white font-space-grotesk tracking-wide drop-shadow-md">
           {trailer.name}
         </h1>
       </div>
 
-      <p className="text-slate-300 text-base leading-relaxed font-rajdhani opacity-90">
+      <p className="text-slate-300 text-base leading-relaxed font-inter opacity-90">
         {trailer.description}
       </p>
 
@@ -130,48 +130,74 @@ export function TrailerInfo({ trailer }: Props) {
                 <polyline points="20 6 9 17 4 12" />
               </svg>
             </div>
-            <span className="text-sm text-slate-300 font-rajdhani">
-              {feature}
-            </span>
+            <span className="text-sm text-slate-300 font-inter">{feature}</span>
           </div>
         ))}
       </div>
 
       {/* Specs Grid */}
       <div className="bg-white/5 rounded-lg p-3 border border-white/5">
-        <h3 className="text-xs uppercase font-bold mb-4 text-slate-400 font-rajdhani tracking-widest border-b border-white/10 pb-2">
+        <h3 className="text-xs uppercase font-bold mb-4 text-slate-400 font-inter tracking-widest border-b border-white/10 pb-2">
           Thông Số Kỹ Thuật
         </h3>
-        <div className="grid grid-cols-2 gap-3 font-rajdhani">
-          <div className="flex flex-col gap-1">
+        <div className="grid grid-cols-2 gap-x-3 gap-y-4 font-inter">
+          <div className="flex flex-col gap-1 col-span-2">
             <span className="text-slate-500 text-[10px] uppercase tracking-widest">
-              Chiều Dài Tổng
+              Kích Thước (Mét - DxRxC)
             </span>
-            <span className="text-xl font-bold text-white tracking-wide">
-              {trailer.specs.length}
+            <span className="text-lg font-bold text-white tracking-wide">
+              {trailer.specs.dimensions}
             </span>
           </div>
           <div className="flex flex-col gap-1">
             <span className="text-slate-500 text-[10px] uppercase tracking-widest">
-              Chiều Rộng Chuẩn
+              Tải Trọng (Tấn)
+            </span>
+            <span className="text-xl font-bold text-tech-cyan tracking-wide">
+              {trailer.specs.payload}
+            </span>
+          </div>
+          <div className="flex flex-col gap-1">
+            <span className="text-slate-500 text-[10px] uppercase tracking-widest">
+              Tổng Tải (Tấn)
             </span>
             <span className="text-xl font-bold text-white tracking-wide">
-              {trailer.specs.width}
+              {trailer.specs.totalWeight}
             </span>
           </div>
-          <div className="flex flex-col col-span-2 gap-1 mt-2">
+          <div className="flex flex-col gap-1">
             <span className="text-slate-500 text-[10px] uppercase tracking-widest">
-              Tải Trọng Thiết Kế
+              Tự Trọng (Tấn)
             </span>
-            <span className="text-3xl font-bold text-white">
-              {trailer.specs.capacity}
+            <span className="text-base font-bold text-white tracking-wide">
+              {trailer.specs.tareWeight}
             </span>
           </div>
+          {trailer.specs.axles && (
+            <div className="flex flex-col gap-1">
+              <span className="text-slate-500 text-[10px] uppercase tracking-widest">
+                Hệ Thống Trục
+              </span>
+              <span className="text-base font-bold text-white tracking-wide">
+                {trailer.specs.axles}
+              </span>
+            </div>
+          )}
+          {trailer.specs.tires && (
+            <div className="flex flex-col gap-1 col-span-2">
+              <span className="text-slate-500 text-[10px] uppercase tracking-widest">
+                Cỡ Lốp
+              </span>
+              <span className="text-base font-bold text-white tracking-wide">
+                {trailer.specs.tires}
+              </span>
+            </div>
+          )}
         </div>
       </div>
 
       {/* Action Buttons */}
-      <div className="mt-auto flex flex-col gap-3 font-rajdhani uppercase font-bold tracking-widest text-sm pt-4">
+      <div className="mt-auto flex flex-col gap-3 font-inter uppercase font-bold tracking-widest text-sm pt-4">
         <button className="relative w-full py-3 rounded-lg bg-white text-black hover:bg-slate-200 transition-all duration-300 overflow-hidden group shadow-lg">
           <span className="relative z-10 block pr-6 text-sm">
             YÊU CẦU BÁO GIÁ
