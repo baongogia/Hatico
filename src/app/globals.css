@@ -10,7 +10,7 @@
 
 @layer base {
   body {
-    @apply bg-primary-blue text-slate-100 antialiased selection:bg-tech-cyan selection:text-white overflow-hidden;
+    @apply bg-primary-blue text-slate-100 antialiased selection:bg-tech-cyan selection:text-white;
   }
 }
 

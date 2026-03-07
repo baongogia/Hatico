@@ -1,0 +1,187 @@
+import React, { useState } from "react";
+import Image from "next/image";
+import { MOOC_PRODUCTS } from "@/data/products";
+import {
+  IoGridOutline,
+  IoLayersOutline,
+  IoMenuOutline,
+  IoCloseOutline,
+  IoCarSportOutline,
+} from "react-icons/io5";
+
+interface HeaderProps {
+  role: string | null;
+  filter: string;
+  setFilter: (f: string) => void;
+  viewMode: "snap" | "grid";
+  setViewMode: (v: "snap" | "grid") => void;
+}
+
+export default function Header({
+  role,
+  filter,
+  setFilter,
+  viewMode,
+  setViewMode,
+}: HeaderProps) {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const categories = [
+    "all",
+    ...Array.from(new Set(MOOC_PRODUCTS.map((p) => p.category))),
+  ];
+  return (
+    <>
+      <header className="sticky top-0 z-40 bg-white/80 backdrop-blur-lg border-b border-black/5 shadow-sm">
+        <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-16">
+            <div className="shrink-0 flex items-center gap-3">
+              <div className="w-14 h-14 rounded-lg flex items-center justify-center overflow-hidden bg-white shrink-0">
+                <Image
+                  src="/logo/logo.png"
+                  alt="HATICO Logo"
+                  width={40}
+                  height={40}
+                  className="w-full h-full object-contain p-0.5"
+                />
+              </div>
+            </div>
+
+            <div className="flex items-center gap-4">
+              <div className="hidden sm:block text-sm border-r border-black/10 pr-6">
+                <span className="text-slate-500 font-medium">Quyền:</span>{" "}
+                <span className="font-bold text-blue-700 bg-blue-100 px-2.5 py-1 rounded-lg ml-1">
+                  {role === "owner" ? "Chủ sở hữu" : "Khách hàng"}
+                </span>
+              </div>
+
+              <button
+                onClick={() => setIsMenuOpen(true)}
+                className="p-2 text-slate-800 hover:bg-slate-100 rounded-lg transition-colors border border-transparent shadow-sm bg-white"
+              >
+                <IoMenuOutline className="w-6 h-6" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      {/* Mobile/Hamburger Menu Overlay - FULL WIDTH LIGHT MODE */}
+      <div
+        className={`fixed inset-0 bg-slate-900/40 backdrop-blur-sm z-50 transition-opacity duration-300 ${
+          isMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none"
+        }`}
+        onClick={() => setIsMenuOpen(false)}
+      >
+        <div
+          className={`absolute right-0 top-0 bottom-0 w-full bg-white border-l border-slate-200 p-3 flex flex-col shadow-2xl transition-transform duration-300 ease-out transform overflow-hidden ${
+            isMenuOpen ? "translate-x-0" : "translate-x-full"
+          }`}
+          onClick={(e) => e.stopPropagation()}
+        >
+          <div className="relative z-10 flex justify-between items-center mb-6 pb-4 border-b border-slate-100 max-w-lg mx-auto w-full mt-2">
+            <h2 className="text-xl font-bold font-space-grotesk text-slate-900">
+              Chức năng
+            </h2>
+            <button
+              onClick={() => setIsMenuOpen(false)}
+              className="p-1.5 text-slate-400 hover:text-slate-800 hover:bg-slate-100 rounded-lg transition-colors border border-transparent"
+            >
+              <IoCloseOutline className="w-6 h-6" />
+            </button>
+          </div>
+
+          <div className="relative z-10 space-y-8 max-w-lg mx-auto w-full grow overflow-y-auto pb-10">
+            {/* View Mode Togggle */}
+            <div>
+              <p className="text-xs uppercase tracking-widest text-slate-400 font-bold mb-3 pl-1">
+                Chế độ xem
+              </p>
+              <div className="flex bg-slate-200 rounded-lg p-1 shadow-inner border border-slate-300">
+                <button
+                  onClick={() => {
+                    setViewMode("snap");
+                    setIsMenuOpen(false);
+                  }}
+                  className={`flex-1 flex items-center justify-center gap-2 px-3 py-2.5 rounded-lg text-sm font-bold transition-all ${
+                    viewMode === "snap"
+                      ? "bg-white text-blue-600 shadow-sm"
+                      : "text-slate-500 hover:text-slate-800"
+                  }`}
+                >
+                  <IoLayersOutline className="w-5 h-5" /> Hiện đại
+                </button>
+                <button
+                  onClick={() => {
+                    setViewMode("grid");
+                    setIsMenuOpen(false);
+                  }}
+                  className={`flex-1 flex items-center justify-center gap-2 px-3 py-2.5 rounded-lg text-sm font-bold transition-all ${
+                    viewMode === "grid"
+                      ? "bg-white text-blue-600 shadow-sm"
+                      : "text-slate-500 hover:text-slate-800"
+                  }`}
+                >
+                  <IoGridOutline className="w-5 h-5" /> Dạng lưới
+                </button>
+              </div>
+            </div>
+
+            {/* Filter */}
+            <div>
+              <p className="text-xs uppercase tracking-widest text-slate-400 font-bold mb-3 pl-2">
+                Danh mục hiển thị
+              </p>
+              <div className="flex flex-col gap-2">
+                <button
+                  onClick={() => {
+                    setFilter("all");
+                    setIsMenuOpen(false);
+                  }}
+                  className={`text-left px-3 py-3 rounded-lg text-sm font-medium transition-all flex items-center gap-3 ${
+                    filter === "all"
+                      ? "bg-blue-50 text-blue-700 border-2 border-blue-500 shadow-sm"
+                      : "bg-white text-slate-600 border-2 border-slate-100 hover:border-slate-300 hover:bg-slate-50"
+                  }`}
+                >
+                  <IoLayersOutline
+                    className={
+                      filter === "all" ? "text-blue-600" : "text-slate-400"
+                    }
+                    size={22}
+                  />
+                  Tất cả bộ sưu tập
+                </button>
+
+                {categories
+                  .filter((c) => c !== "all")
+                  .map((c) => (
+                    <button
+                      key={c}
+                      onClick={() => {
+                        setFilter(c);
+                        setIsMenuOpen(false);
+                      }}
+                      className={`text-left px-3 py-3 rounded-lg text-sm font-medium transition-all flex items-center gap-3 ${
+                        filter === c
+                          ? "bg-blue-50 text-blue-700 border-2 border-blue-500 shadow-sm"
+                          : "bg-white text-slate-600 border-2 border-slate-100 hover:border-slate-300 hover:bg-slate-50"
+                      }`}
+                    >
+                      <IoCarSportOutline
+                        className={
+                          filter === c ? "text-blue-600" : "text-slate-400"
+                        }
+                        size={22}
+                      />
+                      {c}
+                    </button>
+                  ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
