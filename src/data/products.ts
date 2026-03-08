@@ -26,7 +26,7 @@ export const MOOC_PRODUCTS: Product[] = [
       "Bửng cao 730mm",
     ],
     basePrice: 365, // HN
-    images: [],
+    images: ["/image/mooc_khung/mc.jpg", "/image/mooc_khung/mcs.jpg"],
     comparisons: [
       "Nhẹ hơn đối thủ 500kg, tăng tải trọng chở hàng.",
       "Sử dụng thép T700 nguyên khối dập CNC, cứng hơn 30% so với thép thông thường.",

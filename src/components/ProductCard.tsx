@@ -23,6 +23,7 @@ export default function ProductCard({ product, role, index }: Props) {
   const [markup, setMarkup] = useState(0);
   const [activeModal, setActiveModal] = useState<string | null>(null);
   const [previewImageIdx, setPreviewImageIdx] = useState<number | null>(null);
+  const [activeImageIdx, setActiveImageIdx] = useState(0);
 
   const formatPrice = (price: number) => {
     return new Intl.NumberFormat("vi-VN", {
@@ -34,56 +35,78 @@ export default function ProductCard({ product, role, index }: Props) {
   const displayPrice = product.basePrice + markup;
 
   return (
-    <div className="w-full h-[100dvh] snap-start flex flex-col justify-center items-center relative overflow-hidden bg-slate-50">
+    <div className="w-full h-dvh snap-start flex flex-col justify-center items-center relative overflow-hidden bg-slate-50">
       {/* Background aesthetics */}
       <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.03] mix-blend-multiply z-0 pointer-events-none"></div>
       <div className="absolute top-1/4 -right-1/4 w-1/2 h-1/2 bg-blue-400/10 rounded-full blur-[120px] z-0"></div>
       <div className="absolute bottom-1/4 -left-1/4 w-1/2 h-1/2 bg-cyan-400/5 rounded-full blur-[100px] z-0"></div>
 
       {/* Main product visual area - Top half */}
-      <div className="w-full flex shrink-0 h-[35vh] md:h-[40vh] flex-col justify-center items-center relative z-10 px-3 pt-16 md:pt-20">
-        <div className="relative w-full h-full max-w-4xl mx-auto flex items-center justify-start overflow-x-auto snap-x snap-mandatory scrollbar-none pb-4 md:pb-6">
+      <div className="w-full flex shrink-0 h-[38vh] md:h-[42vh] flex-col justify-center items-center relative z-10 px-3 pt-[76px]">
+        <div
+          className="relative w-full h-full max-w-4xl mx-auto flex items-center justify-start overflow-x-auto snap-x snap-mandatory scrollbar-none pb-1"
+          onScroll={(e) => {
+            const scrollLeft = e.currentTarget.scrollLeft;
+            const width = e.currentTarget.clientWidth;
+            const index = Math.round(scrollLeft / width);
+            if (index !== activeImageIdx) setActiveImageIdx(index);
+          }}
+        >
           {product.images && product.images.length > 0 ? (
             product.images.map((img, i) => (
               <div
                 key={i}
-                className="w-full h-full shrink-0 snap-center flex items-center justify-center cursor-pointer px-4 relative"
+                className="w-full h-full shrink-0 snap-center flex items-center justify-center cursor-pointer relative"
                 onClick={() => setPreviewImageIdx(i)}
               >
-                <div className="relative w-full h-[85%] overflow-hidden rounded-lg">
+                <div className="relative w-full h-full overflow-hidden rounded-[8px] shadow-sm border border-slate-200 bg-slate-100">
                   <Image
                     src={img}
                     alt={product.name}
                     fill
-                    className="object-contain"
+                    className="object-cover"
                   />
+                  {/* Pill count on bottom right */}
+                  <div className="absolute bottom-2 right-2 bg-black/60 backdrop-blur-md px-2.5 py-1 rounded-full text-[10px] font-bold text-white z-10 tracking-widest shadow-sm ring-1 ring-white/20">
+                    {i + 1} / {product.images.length}
+                  </div>
                 </div>
               </div>
             ))
           ) : (
-            <div className="w-full h-full shrink-0 snap-center flex items-center justify-center">
-              <svg
-                className="w-40 h-40 md:w-56 md:h-56 text-slate-200 drop-shadow-sm"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="0.5"
-                  d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"
-                />
-              </svg>
+            <div className="w-full h-full shrink-0 snap-center flex items-center justify-center relative cursor-not-allowed">
+              <div className="relative w-full h-full overflow-hidden rounded-[8px] shadow-sm border border-slate-200 bg-slate-100 flex items-center justify-center">
+                <svg
+                  className="w-20 h-20 text-slate-300 drop-shadow-sm"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="0.5"
+                    d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"
+                  />
+                </svg>
+              </div>
             </div>
           )}
-
-          <div className="absolute bottom-2 left-1/2 -translate-x-1/2 bg-white/80 backdrop-blur-md px-4 py-1.5 rounded-lg border border-slate-200 shadow-sm z-20 pointer-events-none shrink-0 border-b-2 border-b-blue-600">
-            <span className="text-xs md:text-sm uppercase font-bold tracking-[0.2em] text-blue-600">
-              {product.category}
-            </span>
-          </div>
         </div>
+
+        {/* Dots Pagination */}
+        {product.images && product.images.length > 1 ? (
+          <div className="flex gap-1.5 mt-2 mb-1 justify-center w-full shrink-0">
+            {product.images.map((_, i) => (
+              <div
+                key={i}
+                className={`h-1.5 rounded-full transition-all duration-300 ${i === activeImageIdx ? "w-4 bg-blue-600" : "w-1.5 bg-slate-300"}`}
+              />
+            ))}
+          </div>
+        ) : (
+          <div className="h-4 mt-2 mb-1 shrink-0 w-full"></div>
+        )}
       </div>
 
       {/* Product Content - Bottom half */}
