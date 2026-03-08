@@ -35,7 +35,7 @@ export default function ProductCard({ product, role, index }: Props) {
   const displayPrice = product.basePrice + markup;
 
   return (
-    <div className="w-full h-dvh snap-start flex flex-col justify-center items-center relative overflow-hidden bg-slate-50">
+    <div className="w-full h-svh snap-start flex flex-col justify-center items-center relative overflow-hidden bg-slate-50">
       {/* Background aesthetics */}
       <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.03] mix-blend-multiply z-0 pointer-events-none"></div>
       <div className="absolute top-1/4 -right-1/4 w-1/2 h-1/2 bg-blue-400/10 rounded-full blur-[120px] z-0"></div>

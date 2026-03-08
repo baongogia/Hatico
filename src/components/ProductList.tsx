@@ -22,7 +22,7 @@ export default function ProductList({ role, filter, viewMode }: Props) {
   if (viewMode === "snap") {
     return (
       <>
-        <div className="h-dvh w-full overflow-y-scroll snap-y snap-mandatory scroll-smooth relative">
+        <div className="h-svh w-full overflow-y-scroll snap-y snap-mandatory scroll-smooth relative">
           {/* Product screens */}
           {filteredProducts.map((product, index) => (
             <ProductCard
@@ -34,7 +34,7 @@ export default function ProductList({ role, filter, viewMode }: Props) {
           ))}
 
           {/* Footer Screen - Last Snap */}
-          <div className="w-full h-dvh snap-start flex flex-col justify-center items-center relative bg-slate-100 px-3 border-t border-slate-200">
+          <div className="w-full h-svh snap-start flex flex-col justify-center items-center relative bg-slate-100 px-3 border-t border-slate-200">
             <div className="max-w-4xl mx-auto w-full">
               <div className="w-20 h-20 rounded-lg flex items-center justify-center overflow-hidden mb-10 shadow-lg mx-auto bg-white border border-slate-100">
                 <Image

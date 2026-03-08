@@ -17,7 +17,7 @@ export default function Home() {
   };
 
   return (
-    <div className="bg-slate-50 text-slate-900 font-inter selection:bg-cyan-500/30 overflow-hidden h-[100dvh]">
+    <div className="bg-slate-50 text-slate-900 font-inter selection:bg-cyan-500/30 overflow-hidden h-svh">
       {!role && <AuthModal onLogin={handleLogin} />}
 
       {role && (
