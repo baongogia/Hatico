@@ -42,7 +42,7 @@ export default function ProductCard({ product, role, index }: Props) {
       <div className="absolute bottom-1/4 -left-1/4 w-1/2 h-1/2 bg-cyan-400/5 rounded-full blur-[100px] z-0"></div>
 
       {/* Main product visual area - Top half */}
-      <div className="w-full flex shrink-0 h-[38vh] md:h-[42vh] flex-col justify-center items-center relative z-10 px-3 pt-[76px]">
+      <div className="w-full flex shrink-0 h-[32vh] md:h-[40vh] flex-col justify-center items-center relative z-10 px-3 pt-[76px]">
         <div
           className="relative w-full h-full max-w-4xl mx-auto flex items-center justify-start overflow-x-auto snap-x snap-mandatory scrollbar-none pb-1"
           onScroll={(e) => {
@@ -110,28 +110,34 @@ export default function ProductCard({ product, role, index }: Props) {
       </div>
 
       {/* Product Content - Bottom half */}
-      <div className="w-full flex-1 grow min-h-0 max-w-7xl mx-auto px-3 sm:px-6 flex flex-col justify-start gap-3 relative z-10 pb-4 md:pb-6">
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-2 shrink-0 mt-2">
-          <div className="flex-1">
-            <div className="text-blue-600 font-bold mb-1 flex items-center gap-2 text-xs uppercase tracking-wider">
-              <span className="w-1.5 h-1.5 rounded-lg bg-blue-500 shadow-sm animate-pulse"></span>
-              {product.category}
+      <div className="w-full flex-1 grow min-h-0 max-w-7xl mx-auto px-3 sm:px-6 flex flex-col justify-start relative z-10 pb-3">
+        {/* Title & Price Row */}
+        <div className="flex flex-row items-center justify-between gap-3 shrink-0 my-2">
+          {/* Title */}
+          <div className="flex-1 min-w-0">
+            <div className="text-blue-600 font-bold mb-0.5 flex items-center gap-1.5 text-[9px] md:text-xs uppercase tracking-wider">
+              <span className="w-1.5 h-1.5 rounded-lg bg-blue-500 shadow-sm animate-pulse shrink-0"></span>
+              <span className="truncate">{product.category}</span>
             </div>
-            <h2 className="text-[clamp(1.25rem,3vh,1.875rem)] font-black text-slate-900 font-space-grotesk tracking-tight leading-tight line-clamp-2">
+            <h2
+              className="text-base md:text-xl font-black text-slate-900 font-space-grotesk tracking-tight leading-tight line-clamp-2"
+              title={product.name}
+            >
               {product.name}
             </h2>
           </div>
 
-          <div className="text-left md:text-right relative">
-            <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">
+          {/* Price */}
+          <div className="text-right shrink-0 relative">
+            <p className="text-[8px] md:text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-0.5">
               Giá bán dự kiến
             </p>
             {role === "guest" ? (
-              <div className="text-[clamp(1.125rem,2.5vh,1.5rem)] font-bold text-blue-600 border-b-2 border-blue-200 inline-block pb-1">
+              <div className="text-sm md:text-base font-bold text-blue-600 border-b-2 border-blue-200 inline-block">
                 Liên hệ 0988.376.666
               </div>
             ) : (
-              <div className="text-[clamp(1.25rem,3.5vh,2.25rem)] font-black text-slate-900 tracking-tighter flex items-center gap-2">
+              <div className="text-lg md:text-2xl font-black text-slate-900 tracking-tighter">
                 {formatPrice(displayPrice)}
               </div>
             )}
@@ -149,66 +155,57 @@ export default function ProductCard({ product, role, index }: Props) {
           </div>
         </div>
 
-        <div className="flex items-center gap-2 md:gap-3 overflow-x-auto shrink-0 scrollbar-none w-full">
+        {/* Action Pills Row */}
+        <div className="flex items-stretch gap-2 shrink-0 w-full pb-2 mb-1">
           <button
             onClick={() => setActiveModal("info")}
-            className="flex flex-col items-center gap-1 text-slate-500 hover:text-blue-600 transition-colors flex-1"
+            className="flex items-center justify-center px-3 md:px-4 bg-white border border-slate-200 rounded-lg shadow-sm text-slate-600 hover:text-blue-600 transition-colors min-h-[32px] shrink-0"
+            title="Thông tin"
           >
-            <div className="p-2 bg-white rounded-lg shadow-sm border border-slate-200 w-full flex justify-center hover:bg-slate-50">
-              <IoInformationCircleOutline className="w-6 h-6 text-current" />
-            </div>
-            <span className="text-[10px] font-bold uppercase tracking-wider mt-1">
-              Thông tin
-            </span>
+            <IoInformationCircleOutline className="w-5 h-5" />
           </button>
           <button
             onClick={() => setActiveModal("specs")}
-            className="flex flex-col items-center gap-1 text-slate-500 hover:text-blue-600 transition-colors flex-1"
+            className="flex-1 flex justify-center items-center gap-1.5 py-1.5 px-1 bg-white border border-slate-200 rounded-lg shadow-sm text-slate-600 hover:text-blue-600 transition-colors shrink-0"
           >
-            <div className="p-2 bg-white rounded-lg shadow-sm border border-slate-200 w-full flex justify-center hover:bg-slate-50">
-              <IoHardwareChipOutline className="w-6 h-6 text-current" />
-            </div>
-            <span className="text-[10px] font-bold uppercase tracking-wider mt-1">
+            <IoHardwareChipOutline className="w-4 h-4 shrink-0" />
+            <span className="text-[10px] md:text-xs font-bold uppercase tracking-wide mt-0.5 truncate">
               Cấu hình
             </span>
           </button>
           <button
             onClick={() => setActiveModal("reviews")}
-            className="flex flex-col items-center gap-1 text-slate-500 hover:text-blue-600 transition-colors flex-1"
+            className="flex-1 flex justify-center items-center gap-1.5 py-1.5 px-1 bg-white border border-slate-200 rounded-lg shadow-sm text-slate-600 hover:text-blue-600 transition-colors shrink-0"
           >
-            <div className="p-2 bg-white rounded-lg shadow-sm border border-slate-200 w-full flex justify-center hover:bg-slate-50">
-              <IoStarOutline className="w-6 h-6 text-current" />
-            </div>
-            <span className="text-[10px] font-bold uppercase tracking-wider mt-1">
+            <IoStarOutline className="w-4 h-4 shrink-0" />
+            <span className="text-[10px] md:text-xs font-bold uppercase tracking-wide mt-0.5 truncate">
               Xếp hạng
             </span>
           </button>
           <button
             onClick={() => setActiveModal("compare")}
-            className="flex flex-col items-center gap-1 text-slate-500 hover:text-blue-600 transition-colors flex-1"
+            className="flex-1 flex justify-center items-center gap-1.5 py-1.5 px-1 bg-white border border-slate-200 rounded-lg shadow-sm text-slate-600 hover:text-blue-600 transition-colors shrink-0"
           >
-            <div className="p-2 bg-white rounded-lg shadow-sm border border-slate-200 w-full flex justify-center hover:bg-slate-50">
-              <IoGitCompareOutline className="w-6 h-6 text-current" />
-            </div>
-            <span className="text-[10px] font-bold uppercase tracking-wider mt-1">
+            <IoGitCompareOutline className="w-4 h-4 shrink-0" />
+            <span className="text-[10px] md:text-xs font-bold uppercase tracking-wide mt-0.5 truncate">
               So sánh
             </span>
           </button>
         </div>
 
         {/* Specs List */}
-        <div className="w-full grow overflow-y-auto scrollbar-none">
-          <div className="bg-white p-3 md:p-4 rounded-lg border border-slate-200 shadow-sm min-h-full">
-            <h4 className="text-[10px] md:text-xs font-bold uppercase text-slate-400 tracking-[0.2em] mb-2 md:mb-3">
+        <div className="w-full grow overflow-y-auto scrollbar-none relative">
+          <div className="bg-white p-2.5 md:p-4 rounded-lg border border-slate-200 shadow-sm md:min-h-full">
+            <h4 className="text-[9px] md:text-xs font-bold uppercase text-slate-400 tracking-[0.2em] mb-1.5 md:mb-3">
               Thông số thiết yếu
             </h4>
-            <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-1.5 md:gap-y-2">
+            <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-3 gap-y-1.5">
               {product.specs.map((spec, idx) => (
                 <li
                   key={idx}
-                  className="text-[clamp(0.875rem,2vh,1rem)] text-slate-700 flex items-start leading-snug"
+                  className="text-[10px] md:text-sm text-slate-700 flex items-start leading-[1.35]"
                 >
-                  <span className="mt-1 mr-2 text-[10px] text-blue-500 shrink-0">
+                  <span className="mt-0.5 mr-1.5 text-[8px] md:text-[10px] text-blue-500 shrink-0">
                     ▹
                   </span>
                   <span>{spec}</span>
