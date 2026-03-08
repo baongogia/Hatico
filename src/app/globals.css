@@ -6,6 +6,19 @@
   --color-accent-blue: #152c55;
   --color-accent-red: #b71c1c;
   --color-tech-cyan: #00e5ff;
+
+  /* Premium Dark Blue Theme override */
+  --color-blue-50: #eef2f7;
+  --color-blue-100: #d5e0ee;
+  --color-blue-200: #acc3df;
+  --color-blue-300: #7b9fcc;
+  --color-blue-400: #527db5;
+  --color-blue-500: #36609e;
+  --color-blue-600: #1a3668; /* Slightly lighter than accent */
+  --color-blue-700: #152c55; /* The Hatico accent blue */
+  --color-blue-800: #0f203d;
+  --color-blue-900: #0a1426;
+  --color-blue-950: #050a13;
 }
 
 @layer base {

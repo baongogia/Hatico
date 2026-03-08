@@ -2,12 +2,11 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { MOOC_PRODUCTS } from "@/data/products";
 import {
-  IoGridOutline,
   IoLayersOutline,
   IoMenuOutline,
   IoCloseOutline,
-  IoCarSportOutline,
 } from "react-icons/io5";
+import { FaTruck, FaTrailer, FaWater } from "react-icons/fa";
 
 interface HeaderProps {
   role: string | null;
@@ -25,6 +24,19 @@ export default function Header({
   setViewMode,
 }: HeaderProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const getCategoryIcon = (category: string, isActive: boolean) => {
+    const className = isActive ? "text-blue-600" : "text-slate-400";
+    const size = 22;
+
+    if (category.toLowerCase().includes("téc")) {
+      return <FaWater className={className} size={size} />;
+    }
+    if (category.toLowerCase().includes("đầu kéo")) {
+      return <FaTruck className={className} size={size} />;
+    }
+    return <FaTrailer className={className} size={size} />;
+  };
 
   const categories = [
     "all",
@@ -92,45 +104,10 @@ export default function Header({
           </div>
 
           <div className="relative z-10 space-y-8 max-w-lg mx-auto w-full grow overflow-y-auto pb-10">
-            {/* View Mode Togggle */}
-            <div>
-              <p className="text-xs uppercase tracking-widest text-slate-400 font-bold mb-3 pl-1">
-                Chế độ xem
-              </p>
-              <div className="flex bg-slate-200 rounded-lg p-1 shadow-inner border border-slate-300">
-                <button
-                  onClick={() => {
-                    setViewMode("snap");
-                    setIsMenuOpen(false);
-                  }}
-                  className={`flex-1 flex items-center justify-center gap-2 px-3 py-2.5 rounded-lg text-sm font-bold transition-all ${
-                    viewMode === "snap"
-                      ? "bg-white text-blue-600 shadow-sm"
-                      : "text-slate-500 hover:text-slate-800"
-                  }`}
-                >
-                  <IoLayersOutline className="w-5 h-5" /> Hiện đại
-                </button>
-                <button
-                  onClick={() => {
-                    setViewMode("grid");
-                    setIsMenuOpen(false);
-                  }}
-                  className={`flex-1 flex items-center justify-center gap-2 px-3 py-2.5 rounded-lg text-sm font-bold transition-all ${
-                    viewMode === "grid"
-                      ? "bg-white text-blue-600 shadow-sm"
-                      : "text-slate-500 hover:text-slate-800"
-                  }`}
-                >
-                  <IoGridOutline className="w-5 h-5" /> Dạng lưới
-                </button>
-              </div>
-            </div>
-
             {/* Filter */}
             <div>
               <p className="text-xs uppercase tracking-widest text-slate-400 font-bold mb-3 pl-2">
-                Danh mục hiển thị
+                Danh mục sản phẩm
               </p>
               <div className="flex flex-col gap-2">
                 <button
@@ -150,7 +127,7 @@ export default function Header({
                     }
                     size={22}
                   />
-                  Tất cả bộ sưu tập
+                  Tất cả sản phẩm
                 </button>
 
                 {categories
@@ -168,12 +145,7 @@ export default function Header({
                           : "bg-white text-slate-600 border-2 border-slate-100 hover:border-slate-300 hover:bg-slate-50"
                       }`}
                     >
-                      <IoCarSportOutline
-                        className={
-                          filter === c ? "text-blue-600" : "text-slate-400"
-                        }
-                        size={22}
-                      />
+                      {getCategoryIcon(c, filter === c)}
                       {c}
                     </button>
                   ))}
