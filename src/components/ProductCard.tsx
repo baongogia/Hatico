@@ -173,17 +173,6 @@ export default function ProductCard({ product, role, index }: Props) {
             </span>
           </button>
           <button
-            onClick={() => setActiveModal("gallery")}
-            className="flex flex-col items-center gap-1 text-slate-500 hover:text-blue-600 transition-colors flex-1"
-          >
-            <div className="p-2 bg-white rounded-lg shadow-sm border border-slate-200 w-full flex justify-center hover:bg-slate-50">
-              <IoImagesOutline className="w-6 h-6 text-current" />
-            </div>
-            <span className="text-[10px] font-bold uppercase tracking-wider mt-1">
-              Hình ảnh
-            </span>
-          </button>
-          <button
             onClick={() => setActiveModal("reviews")}
             className="flex flex-col items-center gap-1 text-slate-500 hover:text-blue-600 transition-colors flex-1"
           >
