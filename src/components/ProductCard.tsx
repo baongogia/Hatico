@@ -110,14 +110,14 @@ export default function ProductCard({ product, role, index }: Props) {
       </div>
 
       {/* Product Content - Bottom half */}
-      <div className="w-full flex-1 grow min-h-0 max-w-7xl mx-auto px-3 sm:px-6 flex flex-col justify-start relative z-10 pb-4 md:pb-6">
-        <div className="mb-2 md:mb-3 flex flex-col md:flex-row md:items-end justify-between gap-1.5 md:gap-3 border-b border-slate-200 pb-2 md:pb-3 shrink-0 mt-2">
+      <div className="w-full flex-1 grow min-h-0 max-w-7xl mx-auto px-3 sm:px-6 flex flex-col justify-start gap-3 relative z-10 pb-4 md:pb-6">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-2 shrink-0 mt-2">
           <div className="flex-1">
             <div className="text-blue-600 font-bold mb-1 flex items-center gap-2 text-xs uppercase tracking-wider">
               <span className="w-1.5 h-1.5 rounded-lg bg-blue-500 shadow-sm animate-pulse"></span>
               {product.category}
             </div>
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-black text-slate-900 font-space-grotesk tracking-tight leading-tight line-clamp-2">
+            <h2 className="text-[clamp(1.25rem,3vh,1.875rem)] font-black text-slate-900 font-space-grotesk tracking-tight leading-tight line-clamp-2">
               {product.name}
             </h2>
           </div>
@@ -127,11 +127,11 @@ export default function ProductCard({ product, role, index }: Props) {
               Giá bán dự kiến
             </p>
             {role === "guest" ? (
-              <div className="text-lg lg:text-2xl font-bold text-blue-600 border-b-2 border-blue-200 inline-block pb-1">
+              <div className="text-[clamp(1.125rem,2.5vh,1.5rem)] font-bold text-blue-600 border-b-2 border-blue-200 inline-block pb-1">
                 Liên hệ 0988.376.666
               </div>
             ) : (
-              <div className="text-xl sm:text-2xl lg:text-4xl font-black text-slate-900 tracking-tighter flex items-center gap-2">
+              <div className="text-[clamp(1.25rem,3.5vh,2.25rem)] font-black text-slate-900 tracking-tighter flex items-center gap-2">
                 {formatPrice(displayPrice)}
               </div>
             )}
@@ -149,7 +149,7 @@ export default function ProductCard({ product, role, index }: Props) {
           </div>
         </div>
 
-        <div className="flex items-center gap-2 md:gap-3 mb-2 md:mb-3 overflow-x-auto pb-1 md:pb-2 shrink-0 border-b border-slate-100 scrollbar-none">
+        <div className="flex items-center gap-2 md:gap-3 overflow-x-auto shrink-0 scrollbar-none w-full">
           <button
             onClick={() => setActiveModal("info")}
             className="flex flex-col items-center gap-1 text-slate-500 hover:text-blue-600 transition-colors flex-1"
@@ -197,8 +197,8 @@ export default function ProductCard({ product, role, index }: Props) {
         </div>
 
         {/* Specs List */}
-        <div className="w-full grow overflow-y-auto pb-2 md:pb-4 scrollbar-none">
-          <div className="bg-white p-3 md:p-4 rounded-lg border border-slate-200 shadow-sm">
+        <div className="w-full grow overflow-y-auto scrollbar-none">
+          <div className="bg-white p-3 md:p-4 rounded-lg border border-slate-200 shadow-sm min-h-full">
             <h4 className="text-[10px] md:text-xs font-bold uppercase text-slate-400 tracking-[0.2em] mb-2 md:mb-3">
               Thông số thiết yếu
             </h4>
@@ -206,9 +206,11 @@ export default function ProductCard({ product, role, index }: Props) {
               {product.specs.map((spec, idx) => (
                 <li
                   key={idx}
-                  className="text-sm text-slate-700 flex items-start leading-snug"
+                  className="text-[clamp(0.875rem,2vh,1rem)] text-slate-700 flex items-start leading-snug"
                 >
-                  <span className="mt-1 mr-2 text-[10px] text-blue-500">▹</span>
+                  <span className="mt-1 mr-2 text-[10px] text-blue-500 shrink-0">
+                    ▹
+                  </span>
                   <span>{spec}</span>
                 </li>
               ))}
