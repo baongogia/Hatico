@@ -41,8 +41,8 @@ export default function ProductCard({ product, role, index }: Props) {
       <div className="absolute bottom-1/4 -left-1/4 w-1/2 h-1/2 bg-cyan-400/5 rounded-full blur-[100px] z-0"></div>
 
       {/* Main product visual area - Top half */}
-      <div className="w-full h-[40%] flex flex-col justify-center items-center relative z-10 px-3 pt-4">
-        <div className="relative w-full h-full max-w-4xl mx-auto flex items-center justify-start overflow-x-auto snap-x snap-mandatory scrollbar-none pb-8">
+      <div className="w-full flex shrink-0 h-[35vh] md:h-[40vh] flex-col justify-center items-center relative z-10 px-3 pt-16 md:pt-20">
+        <div className="relative w-full h-full max-w-4xl mx-auto flex items-center justify-start overflow-x-auto snap-x snap-mandatory scrollbar-none pb-4 md:pb-6">
           {product.images && product.images.length > 0 ? (
             product.images.map((img, i) => (
               <div
@@ -87,14 +87,14 @@ export default function ProductCard({ product, role, index }: Props) {
       </div>
 
       {/* Product Content - Bottom half */}
-      <div className="w-full h-[60%] max-w-7xl mx-auto px-3 sm:px-6 flex flex-col justify-start relative z-10 pb-4">
-        <div className="mb-3 flex flex-col md:flex-row md:items-end justify-between gap-3 border-b border-slate-200 pb-3">
+      <div className="w-full flex-1 grow min-h-0 max-w-7xl mx-auto px-3 sm:px-6 flex flex-col justify-start relative z-10 pb-4 md:pb-6">
+        <div className="mb-2 md:mb-3 flex flex-col md:flex-row md:items-end justify-between gap-1.5 md:gap-3 border-b border-slate-200 pb-2 md:pb-3 shrink-0 mt-2">
           <div className="flex-1">
             <div className="text-blue-600 font-bold mb-1 flex items-center gap-2 text-xs uppercase tracking-wider">
               <span className="w-1.5 h-1.5 rounded-lg bg-blue-500 shadow-sm animate-pulse"></span>
               {product.category}
             </div>
-            <h2 className="text-2xl md:text-3xl font-black text-slate-900 font-space-grotesk tracking-tight leading-tight line-clamp-2">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-black text-slate-900 font-space-grotesk tracking-tight leading-tight line-clamp-2">
               {product.name}
             </h2>
           </div>
@@ -104,11 +104,11 @@ export default function ProductCard({ product, role, index }: Props) {
               Giá bán dự kiến
             </p>
             {role === "guest" ? (
-              <div className="text-xl lg:text-2xl font-bold text-blue-600 border-b-2 border-blue-200 inline-block pb-1">
+              <div className="text-lg lg:text-2xl font-bold text-blue-600 border-b-2 border-blue-200 inline-block pb-1">
                 Liên hệ 0988.376.666
               </div>
             ) : (
-              <div className="text-2xl lg:text-4xl font-black text-slate-900 tracking-tighter flex items-center gap-2">
+              <div className="text-xl sm:text-2xl lg:text-4xl font-black text-slate-900 tracking-tighter flex items-center gap-2">
                 {formatPrice(displayPrice)}
               </div>
             )}
@@ -126,7 +126,7 @@ export default function ProductCard({ product, role, index }: Props) {
           </div>
         </div>
 
-        <div className="flex items-center gap-3 mb-3 overflow-x-auto pb-2 shrink-0 border-b border-slate-100">
+        <div className="flex items-center gap-2 md:gap-3 mb-2 md:mb-3 overflow-x-auto pb-1 md:pb-2 shrink-0 border-b border-slate-100 scrollbar-none">
           <button
             onClick={() => setActiveModal("info")}
             className="flex flex-col items-center gap-1 text-slate-500 hover:text-blue-600 transition-colors flex-1"
@@ -185,12 +185,12 @@ export default function ProductCard({ product, role, index }: Props) {
         </div>
 
         {/* Specs List */}
-        <div className="w-full grow overflow-y-auto pb-4 scrollbar-none">
-          <div className="bg-white p-4 rounded-lg border border-slate-200 shadow-sm">
-            <h4 className="text-xs font-bold uppercase text-slate-400 tracking-[0.2em] mb-3">
+        <div className="w-full grow overflow-y-auto pb-2 md:pb-4 scrollbar-none">
+          <div className="bg-white p-3 md:p-4 rounded-lg border border-slate-200 shadow-sm">
+            <h4 className="text-[10px] md:text-xs font-bold uppercase text-slate-400 tracking-[0.2em] mb-2 md:mb-3">
               Thông số thiết yếu
             </h4>
-            <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-2">
+            <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-1.5 md:gap-y-2">
               {product.specs.map((spec, idx) => (
                 <li
                   key={idx}
