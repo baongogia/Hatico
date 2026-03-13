@@ -50,7 +50,7 @@ export default function Header({
             <div className="shrink-0 flex items-center gap-3">
               <div className="w-14 h-14 rounded-lg flex items-center justify-center overflow-hidden bg-white shrink-0">
                 <Image
-                  src="/logo/logo.png"
+                  src="/logo/Logo_hatico.png"
                   alt="HATICO Logo"
                   width={40}
                   height={40}

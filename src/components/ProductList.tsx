@@ -38,7 +38,7 @@ export default function ProductList({ role, filter, viewMode }: Props) {
             <div className="max-w-4xl mx-auto w-full">
               <div className="w-20 h-20 rounded-lg flex items-center justify-center overflow-hidden mb-10 shadow-lg mx-auto bg-white border border-slate-100">
                 <Image
-                  src="/logo/logo.png"
+                  src="/logo/Logo_hatico.png"
                   alt="HATICO Logo"
                   width={80}
                   height={80}

@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 import { Role } from "@/data/products";
 
 interface AuthModalProps {
@@ -26,12 +27,23 @@ export default function AuthModal({ onLogin }: AuthModalProps) {
     <div className="fixed inset-0 bg-slate-100 flex items-center justify-center z-50 p-4">
       <div className="bg-white rounded-2xl p-8 w-full max-w-sm border border-slate-200 shadow-lg relative overflow-hidden">
         <div className="relative z-10">
-          <h2 className="text-3xl font-black mb-1 text-slate-900 text-center tracking-tight font-space-grotesk">
-            HATICO
-          </h2>
-          <p className="text-slate-500 text-sm mb-8 text-center font-medium">
-            Hệ thống nội bộ & đối tác
-          </p>
+          <div className="flex flex-col items-center mb-6">
+            <div className="w-20 h-20 rounded-2xl flex items-center justify-center overflow-hidden mb-4 shadow-sm bg-white border border-slate-100 p-2">
+              <Image
+                src="/logo/Logo_hatico.png"
+                alt="HATICO Logo"
+                width={80}
+                height={80}
+                className="w-full h-full object-contain"
+              />
+            </div>
+            <h2 className="text-3xl font-black mb-1 text-slate-900 text-center tracking-tight font-space-grotesk">
+              HATICO
+            </h2>
+            <p className="text-slate-500 text-sm text-center font-medium">
+              Hệ thống nội bộ & đối tác
+            </p>
+          </div>
 
           <form onSubmit={handleSubmit} className="space-y-5">
             <div>
