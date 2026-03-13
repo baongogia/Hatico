@@ -59,17 +59,34 @@ export default function Header({
               </div>
             </div>
 
-            <div className="flex items-center gap-4">
-              <div className="hidden sm:block text-sm border-r border-black/10 pr-6">
-                <span className="text-slate-500 font-medium">Quyền:</span>{" "}
-                <span className="font-bold text-blue-700 bg-blue-100 px-2.5 py-1 rounded-lg ml-1">
-                  {role === "owner" ? "Chủ sở hữu" : "Khách hàng"}
-                </span>
-              </div>
+            <div className="flex items-center gap-6">
+              {/* Desktop Navigation */}
+              <nav className="hidden lg:flex items-center gap-2 bg-slate-50 p-1.5 rounded-xl border border-slate-100 overflow-x-auto scrollbar-none no-scrollbar max-w-[calc(100vw-300px)]">
+                {categories.map((c) => (
+                  <button
+                    key={c}
+                    onClick={() => setFilter(c)}
+                    className={`px-5 py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all flex items-center gap-2.5 whitespace-nowrap ${
+                      filter === c
+                        ? "bg-white text-blue-600 shadow-sm ring-1 ring-black/5"
+                        : "text-slate-500 hover:text-slate-800 hover:bg-white/50"
+                    }`}
+                  >
+                    {c === "all" ? (
+                      <IoLayersOutline className={filter === "all" ? "text-blue-600" : "text-slate-400"} />
+                    ) : (
+                      getCategoryIcon(c, filter === c)
+                    )}
+                    {c === "all" ? "Tất cả" : c}
+                  </button>
+                ))}
+              </nav>
+
+              {/* Removed Quyền (Role) display as per user request */}
 
               <button
                 onClick={() => setIsMenuOpen(true)}
-                className="p-2 text-slate-800 hover:bg-slate-100 rounded-lg transition-colors border border-transparent shadow-sm bg-white"
+                className="lg:hidden p-2 text-slate-800 hover:bg-slate-100 rounded-lg transition-colors border border-slate-200 shadow-sm bg-white"
               >
                 <IoMenuOutline className="w-6 h-6" />
               </button>

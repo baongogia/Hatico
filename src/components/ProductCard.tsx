@@ -32,6 +32,10 @@ export default function ProductCard({ product, role, index }: Props) {
     }).format(price * 1000000);
   };
 
+  const isVideo = (path: string) => {
+    return path.toLowerCase().endsWith(".mov") || path.toLowerCase().endsWith(".mp4");
+  };
+
   const displayPrice = product.basePrice + markup;
 
   return (
@@ -60,15 +64,28 @@ export default function ProductCard({ product, role, index }: Props) {
                 onClick={() => setPreviewImageIdx(i)}
               >
                 <div className="relative w-full h-full overflow-hidden rounded-[8px] shadow-sm border border-slate-200 bg-slate-100">
-                  <Image
-                    src={img}
-                    alt={product.name}
-                    fill
-                    className="object-cover"
-                  />
+                  {isVideo(img) ? (
+                    <video
+                      src={img}
+                      className="w-full h-full object-cover"
+                      muted
+                      loop
+                      playsInline
+                      onMouseOver={(e) => e.currentTarget.play()}
+                      onMouseOut={(e) => e.currentTarget.pause()}
+                    />
+                  ) : (
+                    <Image
+                      src={img}
+                      alt={product.name}
+                      fill
+                      className="object-cover"
+                    />
+                  )}
                   {/* Pill count on bottom right */}
-                  <div className="absolute bottom-2 right-2 bg-black/60 backdrop-blur-md px-2.5 py-1 rounded-full text-[10px] font-bold text-white z-10 tracking-widest shadow-sm ring-1 ring-white/20">
-                    {i + 1} / {product.images.length}
+                  <div className="absolute bottom-3 right-3 bg-black/40 backdrop-blur-xl px-3 py-1 rounded-full text-[10px] font-bold text-white z-10 tracking-[0.15em] shadow-lg ring-1 ring-white/30 flex items-center gap-1.5 transition-all">
+                    <span className="opacity-70">{isVideo(img) ? "VIDEO" : "IMAGE"}</span>
+                    <span>{i + 1} / {product.images.length}</span>
                   </div>
                 </div>
               </div>
@@ -120,7 +137,7 @@ export default function ProductCard({ product, role, index }: Props) {
               <span className="truncate">{product.category}</span>
             </div>
             <h2
-              className="text-lg sm:text-xl md:text-2xl font-black text-slate-900 font-space-grotesk tracking-tight leading-snug line-clamp-2"
+              className="text-lg sm:text-xl md:text-2xl font-bold md:font-extrabold text-slate-900 font-space-grotesk tracking-tight leading-snug line-clamp-2"
               title={product.name}
             >
               {product.name}
@@ -156,59 +173,80 @@ export default function ProductCard({ product, role, index }: Props) {
         </div>
 
         {/* Action Pills Row */}
-        <div className="flex items-stretch gap-2 shrink-0 w-full pb-3 mb-1">
-          <button
-            onClick={() => setActiveModal("info")}
-            className="flex items-center justify-center p-2.5 md:px-4 bg-white border border-slate-200 rounded-lg shadow-sm text-slate-600 hover:text-blue-600 transition-colors shrink-0"
-            title="Thông tin"
-          >
-            <IoInformationCircleOutline className="w-5 h-5" />
-          </button>
+        <div className="flex items-stretch gap-2 shrink-0 w-full pb-4 mb-3">
           <button
             onClick={() => setActiveModal("specs")}
-            className="flex-1 flex justify-center items-center gap-1.5 p-2 bg-white border border-slate-200 rounded-lg shadow-sm text-slate-600 hover:text-blue-600 transition-colors shrink-0"
+            className="flex-2 flex justify-center items-center gap-2 p-2.5 bg-blue-600 border border-blue-700 rounded-lg shadow-md text-white hover:bg-blue-700 transition-all active:scale-95 shrink-0"
           >
             <IoHardwareChipOutline className="w-4 h-4 md:w-5 md:h-5 shrink-0" />
-            <span className="text-[11px] md:text-xs font-bold uppercase tracking-wide truncate">
+            <span className="text-[11px] md:text-sm font-bold uppercase tracking-wider truncate">
               Cấu hình
             </span>
           </button>
-          <button
-            onClick={() => setActiveModal("reviews")}
-            className="flex-1 flex justify-center items-center gap-1.5 p-2 bg-white border border-slate-200 rounded-lg shadow-sm text-slate-600 hover:text-blue-600 transition-colors shrink-0"
-          >
-            <IoStarOutline className="w-4 h-4 md:w-5 md:h-5 shrink-0" />
-            <span className="text-[11px] md:text-xs font-bold uppercase tracking-wide truncate">
-              Xếp hạng
-            </span>
-          </button>
-          <button
-            onClick={() => setActiveModal("compare")}
-            className="flex-1 flex justify-center items-center gap-1.5 p-2 bg-white border border-slate-200 rounded-lg shadow-sm text-slate-600 hover:text-blue-600 transition-colors shrink-0"
-          >
-            <IoGitCompareOutline className="w-4 h-4 md:w-5 md:h-5 shrink-0" />
-            <span className="text-[11px] md:text-xs font-bold uppercase tracking-wide truncate">
-              So sánh
-            </span>
-          </button>
+          
+          <div className="flex-1 flex gap-2">
+            <button
+              onClick={() => setActiveModal("reviews")}
+              className="flex-1 flex justify-center items-center gap-1.5 p-2 bg-white border border-slate-200 rounded-lg shadow-sm text-slate-600 hover:text-blue-600 hover:border-blue-200 transition-all shrink-0"
+              title="Xếp hạng"
+            >
+              <IoStarOutline className="w-4 h-4 md:w-5 md:h-5 shrink-0" />
+              <span className="hidden md:inline text-[11px] font-bold uppercase tracking-wide truncate">
+                Xếp hạng
+              </span>
+            </button>
+            <button
+              onClick={() => setActiveModal("compare")}
+              className="flex-1 flex justify-center items-center gap-1.5 p-2 bg-white border border-slate-200 rounded-lg shadow-sm text-slate-600 hover:text-blue-600 hover:border-blue-200 transition-all shrink-0"
+              title="So sánh"
+            >
+              <IoGitCompareOutline className="w-4 h-4 md:w-5 md:h-5 shrink-0" />
+              <span className="hidden md:inline text-[11px] font-bold uppercase tracking-wide truncate">
+                So sánh
+              </span>
+            </button>
+            <button
+              onClick={() => setActiveModal("info")}
+              className="flex-1 flex items-center justify-center p-2.5 bg-white border border-slate-200 rounded-lg shadow-sm text-slate-600 hover:text-blue-600 hover:border-blue-200 transition-all shrink-0"
+              title="Thông tin chi tiết"
+            >
+              <IoInformationCircleOutline className="w-5 h-5" />
+              <span className="hidden md:inline ml-1.5 text-[11px] font-bold uppercase tracking-wide truncate">
+                Chi tiết
+              </span>
+            </button>
+          </div>
         </div>
 
-        {/* Specs List */}
         <div className="w-full grow overflow-y-auto scrollbar-none relative pb-1">
-          <div className="bg-white p-3 md:p-4 rounded-lg border border-slate-200 shadow-sm min-h-full">
-            <h4 className="text-[10px] md:text-xs font-bold uppercase text-slate-400 tracking-[0.2em] mb-2 md:mb-3">
-              Thông số thiết yếu
-            </h4>
-            <ul className="grid grid-cols-1 lg:grid-cols-2 gap-x-4 gap-y-2">
+          <div className="bg-white p-4 md:p-6 rounded-xl border border-slate-200 shadow-sm h-fit mt-2 md:mt-4">
+            <div className="flex items-center justify-between mb-4 md:mb-5">
+              <h4 className="text-[10px] md:text-xs font-bold uppercase text-slate-400 tracking-[0.25em]">
+                Thông số thiết yếu
+              </h4>
+              <div className="h-px flex-1 bg-slate-100 ml-4"></div>
+            </div>
+            <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-3">
               {product.specs.map((spec, idx) => (
                 <li
                   key={idx}
-                  className="text-xs sm:text-sm text-slate-700 flex items-start leading-snug"
+                  className="text-xs md:text-sm text-slate-700 flex items-start gap-2.5 leading-relaxed group"
                 >
-                  <span className="mt-1 mr-2 text-[10px] text-blue-500 shrink-0">
-                    ▹
+                  <IoCheckmarkCircleOutline className="mt-0.5 text-blue-500 shrink-0 w-3.5 h-3.5 opacity-70 group-hover:opacity-100 transition-opacity" />
+                  <span className="group-hover:text-slate-900 transition-colors">
+                    {spec.includes(":") ? (
+                      <>
+                        <span className="font-semibold text-slate-900">
+                          {spec.split(":")[0]}:
+                        </span>
+                        <span className="text-slate-600 font-normal">
+                          {spec.split(":")[1]}
+                        </span>
+                      </>
+                    ) : (
+                      spec
+                    )}
                   </span>
-                  <span>{spec}</span>
                 </li>
               ))}
             </ul>
@@ -422,13 +460,22 @@ export default function ProductCard({ product, role, index }: Props) {
                 className="relative w-full h-[80%] max-w-5xl"
                 onClick={(e) => e.stopPropagation()}
               >
-                <Image
-                  src={product.images[previewImageIdx]}
-                  alt={`Preview ${previewImageIdx + 1}`}
-                  fill
-                  className="object-contain"
-                  priority
-                />
+                {isVideo(product.images[previewImageIdx]) ? (
+                  <video
+                    src={product.images[previewImageIdx]}
+                    controls
+                    autoPlay
+                    className="w-full h-full object-contain"
+                  />
+                ) : (
+                  <Image
+                    src={product.images[previewImageIdx]}
+                    alt={`Preview ${previewImageIdx + 1}`}
+                    fill
+                    className="object-contain"
+                    priority
+                  />
+                )}
               </div>
               <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-white/70 text-sm font-medium tracking-widest bg-black/40 px-4 py-1.5 rounded-full border border-white/10">
                 {previewImageIdx + 1} / {product.images.length}
