@@ -46,7 +46,7 @@ export default function ProductCard({ product, role, index }: Props) {
       <div className="absolute bottom-1/4 -left-1/4 w-1/2 h-1/2 bg-cyan-400/5 rounded-full blur-[100px] z-0"></div>
 
       {/* Main product visual area - Top half */}
-      <div className="w-full flex shrink-0 h-[40vh] md:h-[45vh] flex-col justify-center items-center relative z-10 px-3 pt-[80px]">
+      <div className="w-full flex shrink-0 h-[35vh] md:h-[45vh] flex-col justify-center items-center relative z-10 px-3 pt-[80px]">
         <div
           className="relative w-full h-full max-w-4xl mx-auto flex items-center justify-start overflow-x-auto snap-x snap-mandatory scrollbar-none pb-1"
           onScroll={(e) => {
@@ -129,7 +129,7 @@ export default function ProductCard({ product, role, index }: Props) {
       {/* Product Content - Bottom half */}
       <div className="w-full flex-1 grow min-h-0 max-w-7xl mx-auto px-3 sm:px-6 flex flex-col justify-start relative z-10 pb-3">
         {/* Title & Price Row */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-3 shrink-0 my-3">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-2 md:gap-3 shrink-0 my-2 md:my-3">
           {/* Title */}
           <div className="flex-1 min-w-0">
             <div className="text-blue-600 font-bold mb-1 flex items-center gap-2 text-[10px] md:text-xs uppercase tracking-wider">
@@ -167,7 +167,7 @@ export default function ProductCard({ product, role, index }: Props) {
         </div>
 
         {/* Action Pills Row */}
-        <div className="flex items-stretch gap-2 shrink-0 w-full pb-4 mb-3">
+        <div className="flex items-stretch gap-2 shrink-0 w-full mb-3">
           <button
             onClick={() => setActiveModal("specs")}
             className="flex-2 flex justify-center items-center gap-2 p-2.5 bg-blue-600 border border-blue-700 rounded-lg shadow-md text-white hover:bg-blue-700 transition-all active:scale-95 shrink-0"
@@ -213,14 +213,14 @@ export default function ProductCard({ product, role, index }: Props) {
         </div>
 
         <div className="w-full grow overflow-y-auto scrollbar-none relative pb-1">
-          <div className="bg-white p-4 md:p-6 rounded-xl border border-slate-200 shadow-sm h-fit mt-2 md:mt-4">
-            <div className="flex items-center justify-between mb-4 md:mb-5">
+          <div className="bg-white p-3 md:p-6 rounded-xl border border-slate-200 shadow-sm h-fit mt-0 md:mt-4">
+            <div className="flex items-center justify-between mb-3 md:mb-5">
               <h4 className="text-[10px] md:text-xs font-bold uppercase text-slate-400 tracking-[0.25em]">
                 Thông số thiết yếu
               </h4>
               <div className="h-px flex-1 bg-slate-100 ml-4"></div>
             </div>
-            <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-3">
+            <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-2 md:gap-y-3">
               {product.specs.map((spec, idx) => (
                 <li
                   key={idx}

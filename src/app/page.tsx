@@ -34,9 +34,6 @@ export default function Home() {
           <main className="h-full w-full">
             <ProductList role={role} filter={filter} viewMode={viewMode} />
           </main>
-
-          {/* Only show floating call button if not an owner */}
-          {role !== "owner" && <FloatingCall />}
         </div>
       )}
     </div>
