@@ -22,6 +22,15 @@ export const metadata: Metadata = {
     "Trình diễn cấu trúc và công năng rơ moóc công nghiệp nặng với mô hình 3D kỹ thuật số.",
 };
 
+import type { Viewport } from "next";
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  viewportFit: "cover",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{

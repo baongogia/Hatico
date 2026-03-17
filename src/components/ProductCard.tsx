@@ -36,7 +36,7 @@ export default function ProductCard({ product, role, index }: Props) {
     return path.toLowerCase().endsWith(".mov") || path.toLowerCase().endsWith(".mp4");
   };
 
-  const displayPrice = product.basePrice + markup;
+  const displayPrice = typeof product.basePrice === "number" ? product.basePrice + markup : product.basePrice;
 
   return (
     <div className="w-full h-svh snap-start flex flex-col justify-center items-center relative overflow-hidden bg-slate-50">
@@ -155,7 +155,7 @@ export default function ProductCard({ product, role, index }: Props) {
               </div>
             ) : (
               <div className="text-xl sm:text-2xl font-black text-slate-900 tracking-tighter">
-                {formatPrice(displayPrice)}
+                {typeof displayPrice === "number" ? formatPrice(displayPrice) : displayPrice}
               </div>
             )}
 

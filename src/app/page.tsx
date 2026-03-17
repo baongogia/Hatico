@@ -8,7 +8,7 @@ import FloatingCall from "@/components/FloatingCall";
 import { Role } from "@/data/products";
 
 export default function Home() {
-  const [role, setRole] = useState<Role>(null);
+  const [role, setRole] = useState<Role>("guest");
   const [filter, setFilter] = useState("all");
   const [viewMode, setViewMode] = useState<"snap" | "grid">("snap");
 
@@ -18,8 +18,6 @@ export default function Home() {
 
   return (
     <div className="bg-slate-50 text-slate-900 font-inter selection:bg-cyan-500/30 overflow-hidden h-svh">
-      {!role && <AuthModal onLogin={handleLogin} />}
-
       {role && (
         <div className="relative h-full w-full">
           {/* Header has absolute position in this layout to float above snap sections */}

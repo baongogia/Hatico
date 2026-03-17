@@ -1,83 +1,102 @@
-Chào bạn, dưới đây là chi tiết toàn bộ thông tin sản phẩm được trích xuất từ bảng báo giá của Công ty CP XNK Quốc Tế HATICO. Đơn vị tính giá trong bảng là Triệu đồng.
+### Thông tin chung của Báo giá
 
-### 1. Dòng Moóc Mui (STT 2 - 3)
+- **Đơn vị phát hành:** CÔNG TY CỔ PHẦN XNK QUỐC TẾ HATICO (HATICO International)[cite: 1, 7].
+- **Địa chỉ:** Tầng 5, tòa nhà số 430 Cầu Am, Vạn Phúc, Hà Đông, Hà Nội[cite: 1].
+- **Lĩnh vực:** Nhà nhập khẩu Rơ Mooc, cung cấp thiết bị vận tải[cite: 1].
+- **Hotline:** 0988376666[cite: 1].
+- **Tiêu đề:** BÁO GIÁ SƠ MI RƠ MOOC[cite: 2].
+- **Đơn vị tính:** Triệu đồng[cite: 3].
+- **Hiệu lực:** Kể từ ngày 16/03/2026[cite: 5].
+- **Điều kiện giao hàng:** Áp dụng giao hàng tại Bãi xe Cty HATICO: Việt hưng, Long Biên, Hà Nội[cite: 6].
 
-- **Moóc mui khung bửng 730mm:** Kích thước: 12400 x 2500 x 4000 (mm). Tổng tải: 39050 kg, Tự trọng: 7000 kg, Tải trọng CPTGGT: 32050 kg. Chiều dài cơ sở: 7200 + 1310 + 1310 (mm). Lốp 12R22.5 hiệu Double coin, Cầu 13 tấn. Giá: 365 HN, 370 MT, 375 TN, 380 DN (Số lượng: 4).
+---
 
-- **Moóc khung mui bửng 1m:** Kích thước: 12400 x 2500 x 4000 (mm). Tổng tải: 39050 kg, Tự trọng: 7000 kg, Tải trọng CPTGGT: 32050 kg. Chiều dài cơ sở: 7500 + 1310 + 1310 (mm). Lốp 12R22.5 hiệu Double coin, Cầu 13 tấn. Giá: 350 (Số lượng: 3).
+### Chi tiết các sản phẩm trong bảng (Theo thứ tự STT)
 
-- **Moóc khung mui bửng 0.8m:** Kích thước: 12400 x 2500 x 4000 (mm). Tổng tải: 39050 kg, Tự trọng: 7000 kg, Tải trọng CPTGGT: 32050 kg. Chiều dài cơ sở: 7000 + 1310 + 1310 (mm). Lốp 12R22.5 hiệu Double coin, Cầu 13 tấn. Giá: 350 (Số lượng: 2).
+- **STT 1: Moóc mui – lốp 12R22.5** [cite: 4]
+  - _Nội dung:_ MOÓC KHUNG BỬNG 730MM, - Kích thước: 12400 x 2500 x 4000 (mm), - Tổng tải : 39050 kg, - Tự trọng: 7000 kg, - Tải trọng CPTGGT: 32.050 kg, - Chiều dài cơ sở: 7200+1310+1310 (mm), - Lốp 12R22.5 hiệu Double coin, - Cầu 13 tấn –, - Bửng cao 730m m. [cite: 4]
+  - _Giá trị cột tương ứng:_ 365 HN, 370 MT, 375 TN, 380 DN, 4 [cite: 4]
+- **STT 2: Moóc mui – lốp 12R22.5** [cite: 4]
+  - _Sản phẩm 2.1:_ MOÓC KHUNG MUI BỬNG 1M, - Kích thước: 12400 x 2500 x 4000 (mm), - Tổng tải : 39050 kg, - Tự trọng: 7000 kg, - Tải trọng CPTGGT: 32.050 kg, - Chiều dài cơ sở: 7500+1310+1310 (mm), - Lốp 12R22.5 hiệu Double coin, - Cầu 13 tấn, - Bửng cao 1m. _Giá trị:_ 350, 3 [cite: 4]
+  - _Sản phẩm 2.2:_ MOÓC KHUNG MUI BỬNG 0.8M, - Kích thước: 12400 x 2500 x 4000 (mm), - Tổng tải : 39050 kg, - Tự trọng: 7000 kg, - Tải trọng CPTGGT: 32.050 kg, - Chiều dài cơ sở: 7000+1310+1310 (mm), - Lốp 12R22.5 hiệu Double coin, - Cầu 13 tấn, - Bửng cao 0.8m. _Giá trị:_ 350, 2 [cite: 4]
+- **STT 3: Moóc mui – lốp1200R20** [cite: 4]
+  - _Nội dung:_ MOÓC KHUNG MUI 3 TRỤC. - Kích thước: 12400 x 2500 x 4000 (mm), - Tổng tải: 39.050 kg, - Tự trọng: 10.000 kg, - Tải trọng CPTGGT: 29050 kg, - Chiều dài cơ sở: 7200+1310+1310 (mm), - Lốp 12.00R20 – 20pr, - Cầu 16 tấn, - Bửng cao 78cm [cite: 4]
+  - _Giá trị cột tương ứng:_ 420 HN, 425 MT, 430 TN-DN, 4 [cite: 4]
+- **STT 4: Moóc sàn 40F - lốp 1200R20** [cite: 4]
+  - _Nội dung:_ MOÓC SÀN 3 TRỤC 40F, Kích thước: 12500 x 2500 x 1550 (mm), Tổng tải: 39050 kg, Tự trọng: 7700kg, Tải trọng CPTGGT: 31750 kg, - Chiều dài cơ sở: 7000+1310+1310 (mm), - Lốp 12.00R20 – 20PR gai chân chó [cite: 4]
+  - _Giá trị cột tương ứng:_ 355, 3 [cite: 4]
+- **STT 5: Moóc sàn 40 lốp 12R22.5** [cite: 4]
+  - _Nội dung:_ MOÓC SÀN 3 TRỤC 40F, Kích thước: 12500 x 2500 x 1450 (mm), Tổng tải: 39050 kg, Tự trọng: 6500kg, Tải trọng CPTGGT: 32550 kg, - Chiều dài cơ sở: 7000+1310+1310 (mm), - Lốp 12R22.5– 18PR gai cục [cite: 4]
+  - _Giá trị cột tương ứng:_ 325 HN, 330 MT, 335 TN-ĐN, 3 [cite: 4]
+- **STT 6: Moóc sàn 45F – 14.0m** [cite: 4]
+  - _Nội dung:_ Moóc sàn 45F 8 tấn, Kích thước: 14000 x 2500 x 1500 (mm), Tổng tải: 39050kg, Tự trọng: 8000kg, Tải trọng CPTGGT : 31050 kg, Chiều dài cơ sở: 7800 +1310+1310 (mm), Lốp 12.00R20-20pr gai chân chó, Cầu 13 tấn [cite: 4]
+  - _Giá trị cột tương ứng:_ 370 HN, 375 MT, 380 TN-DN, 3 [cite: 4]
+- **STT 7: Moóc sàn 45F – 14.3m** [cite: 4]
+  - _Nội dung:_ Moóc sàn 45F 8 tấn, Kích thước: 14300 x 2500 x 1500 (mm), Tổng tải: 39050kg, Tự trọng: 8200kg, Tải trọng CPTGGT : 30850 kg, Chiều dài cơ sở: 8100 +1310+1310 (mm), Lốp 12.00R20-20pr HD628, Cầu 16 tấn [cite: 4]
+  - _Giá trị cột tương ứng:_ 375 HN, 380 MT, 385 TN-DN, 3 [cite: 4]
+- **STT 8: Moóc sàn 45F – 14.3m** [cite: 4]
+  - _Nội dung:_ Moóc sàn 45F 9.5 tấn, Kích thước: 14300 x 2500 x 1500 (mm), Tổng tải: 39050kg, Tự trọng: 9500kg, Tải trọng CPTGGT : 29550 kg, Chiều dài cơ sở: 8100 +1310+1310 (mm), Lốp 12.00R20-20pr HD628, Cầu 16 tấn [cite: 4]
+  - _Giá trị cột tương ứng:_ 420 HN, 425 MT, 430 TN-DN, 4 [cite: 4]
+- **STT 9: Moóc xương thẳng 40F** [cite: 4]
+  - _Nội dung:_ Moóc xương 12,4m 5.5 tấn, Kích thước: 12400 x 2500 x 1500 (mm), Tổng tải: 39050kg, Tự trọng: 5500kg, Tải trọng CPTGGT : 33550 kg, Chiều dài cơ sở: 7420 +1310+1310, Lốp 12.R22.5, Cầu 13 tấn [cite: 4]
+  - _Giá trị cột tương ứng:_ 290 HN, 295 MT, 303 DN- TN, 3 [cite: 4]
+- **STT 10: Moóc xương thẳng 45F ko săm** [cite: 4]
+  - _Nội dung:_ Moóc xương thẳng 45F, Kích thước: 14000 x 2500x 1580 (mm), Tổng tải: 39050 Kg, Tự trọng: 6000 Kg, Tải trọng CPTGGT: 33050kg, Lốp 12R22.5 hiệu Double coin, Sắt xi cao 600mm, Chiều dài cơ sở:7900 + 1310+ 1310 (mm), Cầu 13 tấn [cite: 4]
+  - _Giá trị cột tương ứng:_ 325, 3 [cite: 4]
+- **STT 11: Moóc xương thẳng 45F lốp có săm** [cite: 4]
+  - _Nội dung:_ Moóc xương 45F, Kích thước: 14000 x 2500x 1580 (mm), Tổng tải: 39050 Kg, Tự trọng: 6900 Kg, Tải trọng CPTGGT: 32150kg, Lốp 12.00R20 hiệu HD628, Sắt xi cao 600mm, Chiều dài cơ sở:7900 + 1310+ 1310 (mm), Cầu 16 tấn [cite: 4]
+  - _Giá trị cột tương ứng:_ 345, 3 [cite: 4]
+- **STT 12: Moóc xương cổ cò 45F có săm** [cite: 4]
+  - _Nội dung:_ Moóc xương cổ cò 45F, Kích thước: 14130 x 2500x 1500 (mm), Tổng tải: 39050 Kg, Tự trọng: 6500 Kg, Tải trọng CPTGGT: 32550kg, Lốp 12.00R20 lốp HD628, Sắt xi cao 600mm, Chiều dài cơ sở:7900 + 1310+ 1310 (mm), Cầu 16 tấn [cite: 4]
+  - _Giá trị cột tương ứng:_ 345 HN, 345 MT, 350 TN-DN, 3 [cite: 4]
+- **STT 13: Moóc xương cổ cò 45F ko săm** [cite: 4]
+  - _Nội dung:_ Moóc xương cổ cò 45F, Kích thước: 14130 x 2500x 1500 (mm), Tổng tải: 39050 Kg, Tự trọng: 6000 Kg, Tải trọng CPTGGT: 33000kg, Lốp 12R22.5 lốp Duoble coin, Sắt xi cao 600mm, Chiều dài cơ sở:7900 + 1310+ 1310 (mm) [cite: 4]
+  - _Giá trị cột tương ứng:_ 320 HN, 325 MT, 330 TN-DN, 2 [cite: 4]
+- **STT 14: Moóc lửng – xác 6.8 Tấn** [cite: 4]
+  - _Nội dung:_ Mooc lửng 40F lốp không săm, Kích thước: 12400 x 2500 x 2200 (mm), Kích thước LT: 12220x2400x450 (mm), Tổng tải: 39050 Kg, Tự trọng: 6800 Kg, Tải trọng CPTGGT: 32250 kg, Lốp 12R22.5; hiệu Double coin, Chiều dài cơ sở:7500 + 1310+ 1310 (mm, Cầu 13 tấn [cite: 4]
+  - _Giá trị cột tương ứng:_ 320, 3 [cite: 4]
+- **STT 15: Mooc ben vuông 8,6 tấn** [cite: 4]
+  - _Nội dung:_ Mooc ben có săm 8,6 tấn, Kích thước: 9280 x 2500 x 3650 (mm), Kích thước LT: 8600x2380x1240 (mm), Tổng tải: 36900 Kg, Tự trọng: 8600 Kg, Tải trọng CPTGGT: 28300 kg, Lốp 12.00R20 (20PR); hiệu HD628, Chiều dài cơ sở:4510 + 1310+ 1310 (mm, Cầu 13 tấn, Tháp ben : 214 (mm) [cite: 4]
+  - _Giá trị cột tương ứng:_ 540 HN, 545 CN, 5 HN, 6 CN [cite: 4]
+- **STT 9 (Đánh số lặp trong bản gốc): Moóc ben vuông 9,5 tấn** [cite: 4]
+  - _Nội dung:_ Moóc ben 9,5 tấn, Kích thước: 9280 x 2500 x 3650 (mm), Tổng tải: 37050kg, Tự trọng: 9500kg, Tải trọng CPTGGT : 27550 kg, Chiều dài cơ sở: 4500+1310+1310 (mm), Lốp 12.00R20-20pr gai chân chó, Cầu 16 tấn [cite: 4]
+  - _Giá trị cột tương ứng:_ 590, 5 [cite: 4]
+- **STT 16: Mooc ben U** [cite: 4]
+  - _Nội dung:_ Mooc ben U lốp có săm, Kích thước: 9280 x 2500 x 3650 (mm), Kích thước LT: 8350x2380x1320 (mm), Tổng tải: 36900 Kg, Tự trọng: 8700 Kg, Tải trọng CPTGGT: 28200 kg, Lốp 12.00R20 (20PR); hiệu HD628, Chiều dài cơ sở:4510 + 1310+ 1310 (mm, Cầu 13 tấn, Tháp ben : 214 (mm) [cite: 4]
+  - _Giá trị cột tương ứng:_ 540 HN, 545 CN, 5 [cite: 4]
+- **STT 17: Mooc ben vuông ko săm** [cite: 4]
+  - _Nội dung:_ Mooc ben không săm, Kích thước: 9280 x 2500 x 3650 (mm), Kích thước LT: 8660x2380x1310 (mm), Tổng tải: 36900 Kg, Tự trọng: 8000 Kg, Tải trọng CPTGGT: 28900 kg, Lốp 12R22.5 (18PR); Gai chân chó, Chiều dài cơ sở:4510 + 1310+ 1310 (mm, Cầu 13 tấn, Tháp ben : 214 (mm) [cite: 4]
+  - _Giá trị cột tương ứng:_ 510 HN, 515 MT, 520 TN-DN, 5HN, 5 MT, 6 TN-DN [cite: 4]
+- **STT 18: Téc chở bụi thép** [cite: 4]
+  - _Nội dung:_ Téc chở bụi thép từ lò luyện thép, Kích thước: 11420 x 2500 x 3980 (mm), KT Lòng thùng: 1280x2500x3280 (mm), Tổng tải: 39060 Kg, Tự trọng: 9100 Kg, Tải trọng CPTGGT: 29960 kg, Lốp 1200R20 (20PR); hiệu HD628, Chiều dài cơ sở:6510 + 1310+ 1310(mm), Cầu 13 tấn, Thành thép T700 với tôn thành 4.5mm, Phanh 22 cm, tổng phanh loại lớn. có ABS, Động cơ weichai 44kw new - khí nén bơm Tô Châu [cite: 4]
+  - _Giá trị cột tương ứng:_ 610HN, 615 MT, 620 TN-DN, 5 HN, 5 MT, 6TN-DN [cite: 4]
+- **STT 19: Téc chở xăng** [cite: 4]
+  - _Nội dung:_ Kích thước: 11450 x 2500 x 3860 (mm), KT Lòng thùng: 10740x2460x1940 (mm), Tổng tải: 39050 Kg, Tự trọng: 8900 Kg, Tải trọng CPTGGT: 29980 kg, Lốp 12R22.5, Chiều dài cơ sở:6510 + 1310+ 1310 (mm), Cầu 13 tấn, Thành thép T700, 6 khoang thể tích cụ thể ( 8,2-6-6-6-6-8,2 ), Hết [cite: 4]
+- **STT 20: Mooc siêu trường 18,8m 4 trục** [cite: 4]
+  - _Nội dung:_ Mooc siêu trường 18,8m 4 trục cổ 3m, KT: 18800 x 3200 x 1700m, Cơ sở: 10370+1310+1310+1310 mm, 4 trục xe lốp cỡ 285/70R19.5, - Kích thước: 18800 x 3200 x 1720mm, - Tổng tải: 73350Kg, - Tự trọng: 13.300kg, - Tải trọng : 60050kg [cite: 4]
+  - _Giá trị cột tương ứng:_ 755, 8 [cite: 4]
+- **STT 21: Mooc siêu trường 18m 3 trục** [cite: 4]
+  - _Nội dung:_ Mooc siêu trường 18m 3 trục cổ 2,8m, KT: 18000 x 3200m x 1700m, Cơ sở: 10370+1310+1310+1310 mm, Tổng tải: 54000kg, Tự trọng: 10.000kg, Tải trọng: 44000kg, 3 trục xe lốp cỡ 285/70R19.5 [cite: 4]
+  - _Giá trị cột tương ứng:_ 595, 8 [cite: 4]
+- **STT 22: Mooc siêu trường 18,2m 4 trục** [cite: 4]
+  - _Nội dung:_ Mooc siêu trường 18,2m 4 trục cổ 2,8m, KT: 18200 x 3200 x 1700 mm, Cơ sở: 10370+1310+1310+1310 mm, Xác nặng: 11.000kg, Tổng tải: 75.750kg, Tải trọng: 64.750kg, Cầu 13 tấn, 4 trục xe lốp cỡ 285/70R19.5 [cite: 4]
+  - _Giá trị cột tương ứng:_ 715, 8 [cite: 4]
+- **STT 23: Nhóm xe Sàn thấp** [cite: 4]
+  - _Sản phẩm 23.1:_ 3 Trục Sàn thấp 14m2, Mooc sàn thấp 14m2 ko phải xin giấy, KT: 14200 x 2500m x 1650 mm, Cơ sở : 7700 +1310 +1310 mm, Tổng tải: 39.000 kg, Tự trọng: 9500 Kg, Tải trọng: 29.500 kg, Lốp: 8.25R20, Cầu : 16 tấn. _Giá trị:_ 595, 6 [cite: 4]
+  - _Sản phẩm 23.2:_ 3 Trục Sàn thấp 11m, Sàn thấp 11m không xin giấy, Kích thước :11000x2500(có ống rút ngang)x1650mm, Tự trọng : 8500kg , tổng tải : 39050kg, Tải trọng : 31050kg, Lốp :295/60r22.5, Cầu trục : 16 tấn. _Giá trị:_ 585, 6 [cite: 4]
+- **STT 24: Fooc sàn 4 trục 18.6m cổ 3m3** [cite: 4]
+  - _Nội dung:_ Fooc sàn 4 trục 18.6m cổ 3.3m, KT: 18600 x 3300 x 1700 mm, Cơ sở: 10370+1310+1310+1310 mm, Xác nặng: 13.2 tấn, Tổng tải: 75.750kg, Tải trọng: 62.550kg, Lốp: 285/70R19.5, Cầu 16 tấn [cite: 4]
+  - _Giá trị cột tương ứng:_ 750, Đặt hàng, 8 [cite: 4]
+- **STT 25: Nhóm Fooc sàn / Fooc chở máy** [cite: 4]
+  - _Sản phẩm 25.1:_ Fooc sàn 6 trục 19m, Fooc sàn 6 trục 18.6m cổ 3.3m, KT: 19000 x 3300 x 1700 mm, Cơ sở: 9200+1310+1310+1310 +1310+1310 mm, Tự trọng: 16.5 tấn, Tổng tải: 100.600 kg, Tải trọng: 84.100 kg, 4 trục xe lốp cỡ: 285/70R19.5, Cầu 16 tấn. _Giá trị:_ 890, 8 [cite: 4]
+  - _Sản phẩm 25.2:_ Fooc 03 trục chở máy công trình 14.8m, Phooc 4 trục chở máy, - Kích thước: 14800 x 3200 x 1760mm, - Tự trọng: 14.000kg, - Tổng tải: 68.000kg, - Tải trọng : 54.000kg, - Lốp 1200R20. _Giá trị:_ 780, 8 [cite: 4]
+- **STT 26: Fooc 4 trục 19,9m+5m** [cite: 4]
+  - _Nội dung:_ Foọc 4 trục 19.9m rút 5m, - Kích thước: 19900(+5m)x 3200 x 1760mm, - Cơ sở: 11800 +1310+1310+1310 mm, - Tự trọng: 23.800kg, - Tổng tải: 92.400kg, - Tải trọng : 68.600kg, - Lốp: 12.00R20, - Cầu 25 tấn, 04 trục ( cổ 1m3 ), Hệ thống khóa chốt bằng hơi [cite: 4]
+  - _Giá trị cột tương ứng:_ 1120, 8 [cite: 4]
+- **STT 27: Fooc 4 trục 20.5+5m** [cite: 4]
+  - _Nội dung:_ Foọc 4 trục 20.5 rút 5m, - Kích thước: 20500(+5m)x 3200 x 1760mm, - Cơ sở: 12000 +1310+1310+1310 mm, - Tự trọng: 25.650kg, - Tổng tải: 91.500 kg, - Tải trọng : 65.850kg, - Lốp: 12.00R20, - Cầu 25 tấn, 04 trục ( cổ 1m3 ), Hệ thống khóa chốt bằng hơi [cite: 4]
+  - _Giá trị cột tương ứng:_ 1200, 8 [cite: 4]
+- **Xe Shacman 4 chân máy 400** (Không đánh số STT trong bảng) [cite: 4]
+  - _Nội dung:_ Xe ô tô tải tự đổ 8X4 cabin X3000, WP10H.400E50; Fast 10JSD; Lốp 12.00R20, sx 2026, Thùng dầu 400L, tỷ số 4.266, Bảo hành 12 tháng hoặc 20,000km, Cập nhật trưởng nhóm [cite: 4]
 
-- **Moóc khung mui 3 trục (Lốp 1200R20):** Kích thước: 12400 x 2500 x 4000 (mm). Tổng tải: 39050 kg, Tự trọng: 10000 kg, Tải trọng CPTGGT: 29050 kg. Chiều dài cơ sở: 7200 + 1310 + 1310 (mm). Lốp 12.00R20-20pr, Cầu 16 tấn, Bửng cao 78cm. Giá: 420 HN, 425 MT, 430 TN-DN (Số lượng: 3).
-
-### 2. Dòng Moóc Sàn & Lửng (STT 4 - 8, 14, 23)
-
-- **Moóc sàn 3 trục 40F (Lốp 12.00R20):** Kích thước: 12500 x 2500 x 1550 (mm). Tổng tải: 39050 kg, Tự trọng: 7700kg, Tải trọng: 31750 kg. Lốp 12.00R20 – 20PR gai chân chó, Cơ sở: 7000 + 1310 + 1310 (mm), Cầu 13 tấn. Giá: 355 (Số lượng: 4).
-
-- **Moóc sàn 3 trục 40F (Lốp 12R22.5):** Kích thước: 12500 x 2500 x 1450 (mm). Tổng tải: 39050 kg, Tự trọng: 6500kg, Tải trọng: 32550 kg. Lốp 12R22.5-18PR gai cục, Cơ sở: 7000 + 1310 + 1310 (mm). Giá: 335 (Số lượng: 4).
-
-- **Moóc sàn 45F 8 tấn (Bản 14.0m):** Kích thước: 14000 x 2500 x 1500 (mm). Tổng tải: 39050kg, Tự trọng: 8000kg, Tải trọng: 31050 kg. Lốp 12.00R20-20pr gai chân chó, Cơ sở: 7800 + 1310 + 1310 (mm), Cầu 13 tấn. Giá: 370 HN, 375 MT, 380 TN-DN (Số lượng: 3).
-
-- **Moóc sàn 45F 8 tấn (Bản 14.3m):** Kích thước: 14300 x 2500 x 1500 (mm). Tổng tải: 39050kg, Tự trọng: 8200kg, Tải trọng: 30850 kg. Lốp 12.00R20-20pr HD628, Cơ sở: 8100 + 1310 + 1310 (mm), Cầu 16 tấn. Giá: 375 HN, 380 MT, 385 TN-DN (Số lượng: 3).
-
-- **Moóc sàn 45F 9.5 tấn (Bản 14.3m):** Kích thước: 14300 x 2500 x 1500 (mm). Tổng tải: 39050kg, Tự trọng: 9500kg, Tải trọng: 29550 kg. Lốp 12.00R20-20pr HD628, Cơ sở: 8100 + 1310 + 1310 (mm), Cầu 16 tấn. Giá: 420 HN, 425 MT, 430 TN-DN (Số lượng: 4).
-
-- **Moóc lửng 40F (Xác 6.8 Tấn):** Kích thước: 12400 x 2500 x 2200 (mm), Lọt lòng: 12220 x 2400 x 450 (mm). Tổng tải: 39050 Kg, Tự trọng: 6800 Kg, Tải trọng: 32250 kg. Lốp 12R22.5 Double coin, Cơ sở: 7500 + 1310 + 1310 (mm), Cầu 13 tấn. Giá: 320 (Số lượng: 3).
-
-- **Moóc sàn thấp 14m2 (3 trục, không xin giấy):** Kích thước: 14200 x 2500 x 1650 (mm), Cơ sở: 7700 + 1310 + 1310 (mm). Tổng tải: 39000 kg, Tự trọng: 9500 Kg, Tải trọng: 29500 kg. Lốp: 8.25R20, Cầu: 16 tấn. Giá: 595 (Số lượng: 8).
-
-### 3. Dòng Moóc Xương 45F (STT 10 - 13)
-
-- **Xương thẳng không săm:** Kích thước: 14000 x 2500 x 1580 (mm). Tổng tải: 39050 Kg, Tự trọng: 6000 Kg, Tải trọng: 33050kg. Lốp 12R22.5 Double coin, Sắt xi 600mm, Cơ sở: 7900 + 1310 + 1310 (mm), Cầu 13 tấn. Giá: 325 (Số lượng: 3).
-
-- **Xương thẳng có săm:** Kích thước: 14000 x 2500 x 1580 (mm). Tổng tải: 39050 Kg, Tự trọng: 6900 Kg, Tải trọng: 32150kg. Lốp 12.00R20 HD628, Sắt xi 600mm, Cơ sở: 7900 + 1310 + 1310 (mm), Cầu 16 tấn. Giá: 345 (Số lượng: 3).
-
-- **Xương cổ cò có săm:** Kích thước: 14130 x 2500 x 1500 (mm). Tổng tải: 39050 Kg, Tự trọng: 6500 Kg, Tải trọng: 32550kg. Lốp 12.00R20 HD628, Sắt xi 600mm, Cơ sở: 7900 + 1310 + 1310 (mm), Cầu 16 tấn. Giá: 345 HN, 345 MT, 350 TN-DN (Số lượng: 3).
-
-- **Xương cổ cò không săm:** Kích thước: 14130 x 2500 x 1500 (mm). Tổng tải: 39050 Kg, Tự trọng: 6000 Kg, Tải trọng: 33000kg. Lốp 12R22.5 Double coin, Sắt xi 600mm, Cơ sở: 7900 + 1310 + 1310 (mm). Giá: 320 HN, 325 MT, 330 TN-DN (Số lượng: 2).
-
-### 4. Dòng Moóc Ben (STT 15 - 17)
-
-- **Moóc ben vuông 8.6 tấn có săm:** Kích thước: 9280 x 2500 x 3650 (mm), Lọt lòng: 8600 x 2380 x 1240 (mm). Tổng tải: 36900 Kg, Tự trọng: 8600 Kg, Tải trọng: 28300 kg. Lốp 12.00R20 (20PR) HD628, Cơ sở: 4510 + 1310 + 1310 (mm), Tháp ben 214 (mm), Cầu 13 tấn. Giá: 540 HN, 545 CN (Số lượng: 5 HN, 6 CN).
-
-- **Moóc ben vuông 9.5 tấn:** Kích thước: 9280 x 2500 x 3650 (mm). Tổng tải: 37050kg, Tự trọng: 9500kg, Tải trọng: 27550 kg. Lốp 12.00R20-20pr gai chân chó, Cơ sở: 4500 + 1310 + 1310 (mm), Cầu 16 tấn. Giá: 590 (Số lượng: 5).
-
-- **Moóc ben U lốp có săm:** Kích thước: 9280 x 2500 x 3650 (mm), Lọt lòng: 8350 x 2380 x 1320 (mm). Tổng tải: 36900 Kg, Tự trọng: 8700 Kg, Tải trọng: 28200 kg. Lốp 12.00R20 (20PR) HD628, Cơ sở: 4510 + 1310 + 1310 (mm), Tháp ben 214 (mm), Cầu 13 tấn. Giá: 540 HN, 545 CN (Số lượng: 5).
-
-- **Moóc ben vuông không săm:** Kích thước: 9280 x 2500 x 3650 (mm), Lọt lòng: 8660 x 2380 x 1310 (mm). Tổng tải: 36900 Kg, Tự trọng: 8000 Kg, Tải trọng: 28900 kg. Lốp 12R22.5 (18PR) gai chân chó, Cơ sở: 4510 + 1310 + 1310 (mm), Tháp ben 214 (mm), Cầu 13 tấn. Giá: 510 HN, 515 MT, 520 TN-DN (Số lượng: 5 HN, 5 MT, 6 TN-DN).
-
-### 5. Xe Téc (STT 18 - 19)
-
-- **Téc chở bụi thép (từ lò luyện thép):** Kích thước: 11420 x 2500 x 3980 (mm), Lọt lòng: 1280 x 2500 x 3280 (mm). Tổng tải: 39060 Kg, Tự trọng: 9100 Kg, Tải trọng: 29960 kg. Lốp 1200R20 (20PR) HD628, Cơ sở: 6510 + 1310 + 1310 (mm), Cầu 13 tấn. Thành thép T700 4.5mm, Phanh 22cm có ABS, Động cơ weichai 44kw. Giá: 610 HN, 615 MT, 620 TN-DN (Số lượng: 5 HN, 5 MT, 6 TN-DN).
-
-- **Téc chở xăng:** Kích thước: 11450 x 2500 x 3860 (mm), Lọt lòng: 10740 x 2460 x 1940 (mm). Tổng tải: 39050 Kg, Tự trọng: 8900 Kg, Tải trọng: 29980 kg. Lốp 12R22.5, Cơ sở: 6510 + 1310 + 1310 (mm), Cầu 13 tấn. Thành thép T700, 6 khoang (8,2-6-6-6-6-8,2). Giá: Hết.
-
-### 6. Xe Fooc & Moóc Siêu Trường (STT 20 - 22, 24 - 27)
-
-- **Moóc siêu trường 18.8m 4 trục cổ 3m:** Kích thước: 18800 x 3200 x 1720 (mm). Tổng tải: 73350Kg, Tự trọng: 13300kg, Tải trọng: 60050kg. Cơ sở: 10370 + 1310 + 1310 + 1310 (mm). 4 trục lốp 285/70R19.5, Cầu 16 tấn. Giá: 755 (Số lượng: 10).
-
-- **Moóc siêu trường 18m 3 trục cổ 2.8m:** Kích thước: 18000 x 3200 x 1700 (mm). Tổng tải: 54000kg, Tự trọng: 10000kg, Tải trọng: 44000kg. Cơ sở: 10370 + 1310 + 1310 + 1310 (mm). 3 trục lốp 285/70R19.5, Cầu 13 tấn. Giá: 595 (Số lượng: 10).
-
-- **Moóc siêu trường 18.2m 4 trục cổ 2.8m:** Kích thước: 18200 x 3200 x 1700 (mm). Tổng tải: 75750kg, Tự trọng: 11000kg, Tải trọng: 64750kg. Cơ sở: 10370 + 1310 + 1310 + 1310 (mm). 4 trục lốp 285/70R19.5, Cầu 13 tấn. Giá: 700 (Số lượng: 10).
-
-- **Fooc sàn 4 trục 18.6m cổ 3.3m:** Kích thước: 18600 x 3300 x 1700 (mm). Tổng tải: 75750kg, Tự trọng: 13.2 tấn, Tải trọng: 62550kg. Cơ sở: 10370 + 1310 + 1310 + 1310 (mm). Lốp: 285/70R19.5, Cầu 16 tấn. Giá: 750 (Số lượng: 10).
-
-- **Fooc sàn 6 trục 18.6m cổ 3.3m:** Kích thước: 19000 x 3300 x 1700 (mm). Tổng tải: 100600 kg, Tự trọng: 16.5 tấn, Tải trọng: 84100 kg. Cơ sở: 9200 + 1310 + 1310 + 1310 + 1310 + 1310 (mm). Cấu hình lốp: 285/70R19.5, Cầu 16 tấn. Giá: 890 (Số lượng: 10).
-
-- **Foọc 4 trục 19.9m rút 5m:** Kích thước: 19900(+5m) x 3200 x 1760 (mm). Tổng tải: 92400kg, Tự trọng: 23800kg, Tải trọng: 68600kg. Cơ sở: 11800 + 1310 + 1310 + 1310 (mm). Lốp: 12.00R20 Jangxin JX388, Cầu 25 tấn, 04 trục (cổ 1m3), Khóa chốt hơi. Giá: 1110 (Số lượng: 10).
-
-- **Foọc 4 trục 20.5m rút 5m:** Kích thước: 20500(+5m) x 3200 x 1760 (mm). Tổng tải: 91500 kg, Tự trọng: 25650kg, Tải trọng: 65850kg. Cơ sở: 12000 + 1310 + 1310 + 1310 (mm). Lốp: 12.00R20 Jangxin JX388, Cầu 25 tấn, 04 trục (cổ 1m3), Khóa chốt hơi. Giá: 1190 (Số lượng: 10).
-
-### 7. Xe Đầu Kéo & Xe Tải Tự Đổ
-
-- **Đầu kéo 440 hp cầu láp đời 2026:** Giá 1245.
-
-- **Đầu kéo 440 hp cầu dầu đời 2026:** Giá 1285.
-
-- **Xe Shacman 4 chân máy 400 (Tải tự đổ 8X4 cabin X3000):** Cấu hình WP10H.400E50, Fast 10JSD. Lốp 12.00R20 sản xuất 2022, Thùng dầu 400L, tỷ số 4.266. Bảo hành 12 tháng hoặc 20,000km.
-
-**Lưu ý chung từ bảng báo giá:**
-
-- Bảng giá có hiệu lực từ ngày 10/03/2026.
-
-- Giá áp dụng giao hàng tại Bãi xe Cty HATICO: Số 137 Việt Hưng, Long Biên, Hà Nội.
+Nếu bạn cần tìm kiếm nhanh một loại moóc cụ thể theo khoảng giá hoặc tải trọng, bạn có muốn tôi lọc riêng danh sách đó ra không?

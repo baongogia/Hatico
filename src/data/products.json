@@ -1,0 +1,647 @@
+[
+  {
+    "id": "stt1-mui-730",
+    "name": "MOÓC KHUNG BỬNG 730MM",
+    "category": "Moóc mui",
+    "specs": [
+      "Kích thước: 12400 x 2500 x 4000 (mm)",
+      "Tổng tải: 39050 kg",
+      "Tự trọng: 7000 kg",
+      "Tải trọng CPTGGT: 32050 kg",
+      "Chiều dài cơ sở: 7200+1310+1310 (mm)",
+      "Lốp: 12R22.5 hiệu Double coin",
+      "Cầu: 13 tấn",
+      "Bửng cao: 730mm"
+    ],
+    "basePrice": 365,
+    "images": [
+      "/image/mooc_khung/mc.jpg",
+      "/image/mooc_khung/mcs.jpg"
+    ],
+    "comparisons": []
+  },
+  {
+    "id": "stt2.1-mui-1m",
+    "name": "MOÓC KHUNG MUI BỬNG 1M",
+    "category": "Moóc mui",
+    "specs": [
+      "Kích thước: 12400 x 2500 x 4000 (mm)",
+      "Tổng tải: 39050 kg",
+      "Tự trọng: 7000 kg",
+      "Tải trọng CPTGGT: 32050 kg",
+      "Chiều dài cơ sở: 7500+1310+1310 (mm)",
+      "Lốp: 12R22.5 hiệu Double coin",
+      "Cầu: 13 tấn",
+      "Bửng cao: 1m"
+    ],
+    "basePrice": 350,
+    "images": [
+      "/image/mooc_khung/mc.jpg",
+      "/image/mooc_khung/mcs.jpg"
+    ],
+    "comparisons": []
+  },
+  {
+    "id": "stt2.2-mui-0.8m",
+    "name": "MOÓC KHUNG MUI BỬNG 0.8M",
+    "category": "Moóc mui",
+    "specs": [
+      "Kích thước: 12400 x 2500 x 4000 (mm)",
+      "Tổng tải: 39050 kg",
+      "Tự trọng: 7000 kg",
+      "Tải trọng CPTGGT: 32050 kg",
+      "Chiều dài cơ sở: 7000+1310+1310 (mm)",
+      "Lốp: 12R22.5 hiệu Double coin",
+      "Cầu: 13 tấn",
+      "Bửng cao: 0.8m"
+    ],
+    "basePrice": 350,
+    "images": [
+      "/image/mooc_khung/mc.jpg",
+      "/image/mooc_khung/mcs.jpg"
+    ],
+    "comparisons": []
+  },
+  {
+    "id": "stt3-mui-1200",
+    "name": "MOÓC KHUNG MUI 3 TRỤC",
+    "category": "Moóc mui",
+    "specs": [
+      "Kích thước: 12400 x 2500 x 4000 (mm)",
+      "Tổng tải: 39050 kg",
+      "Tự trọng: 10000 kg",
+      "Tải trọng CPTGGT: 29050 kg",
+      "Chiều dài cơ sở: 7200+1310+1310 (mm)",
+      "Lốp: 12.00R20 – 20pr",
+      "Cầu: 16 tấn",
+      "Bửng cao: 78cm"
+    ],
+    "basePrice": 420,
+    "images": [
+      "/image/mooc_khung/mc.jpg",
+      "/image/mooc_khung/mcs.jpg"
+    ],
+    "comparisons": []
+  },
+  {
+    "id": "stt4-san-40f-1200",
+    "name": "MOÓC SÀN 3 TRỤC 40F",
+    "category": "Moóc sàn",
+    "specs": [
+      "Kích thước: 12500 x 2500 x 1550 (mm)",
+      "Tổng tải: 39050 kg",
+      "Tự trọng: 7700kg",
+      "Tải trọng CPTGGT: 31750 kg",
+      "Chiều dài cơ sở: 7000+1310+1310 (mm)",
+      "Lốp: 12.00R20 – 20PR gai chân chó"
+    ],
+    "basePrice": 355,
+    "images": [
+      "/image/mooc_san/IMG_8418.JPG",
+      "/image/mooc_san/IMG_8419.JPG",
+      "/image/mooc_san/IMG_8420.MOV",
+      "/image/mooc_san/IMG_8421.JPG",
+      "/image/mooc_san/IMG_8422.JPG"
+    ],
+    "comparisons": []
+  },
+  {
+    "id": "stt5-san-40f-12r",
+    "name": "MOÓC SÀN 3 TRỤC 40F",
+    "category": "Moóc sàn",
+    "specs": [
+      "Kích thước: 12500 x 2500 x 1450 (mm)",
+      "Tổng tải: 39050 kg",
+      "Tự trọng: 6500kg",
+      "Tải trọng CPTGGT: 32550 kg",
+      "Chiều dài cơ sở: 7000+1310+1310 (mm)",
+      "Lốp: 12R22.5– 18PR gai cục"
+    ],
+    "basePrice": 325,
+    "images": [
+      "/image/mooc_san/IMG_8418.JPG",
+      "/image/mooc_san/IMG_8419.JPG",
+      "/image/mooc_san/IMG_8420.MOV",
+      "/image/mooc_san/IMG_8421.JPG",
+      "/image/mooc_san/IMG_8422.JPG"
+    ],
+    "comparisons": []
+  },
+  {
+    "id": "stt6-san-45f-14m",
+    "name": "Moóc sàn 45F 8 tấn",
+    "category": "Moóc sàn",
+    "specs": [
+      "Kích thước: 14000 x 2500 x 1500 (mm)",
+      "Tổng tải: 39050kg",
+      "Tự trọng: 8000kg",
+      "Tải trọng CPTGGT: 31050 kg",
+      "Chiều dài cơ sở: 7800 +1310+1310 (mm)",
+      "Lốp: 12.00R20-20pr gai chân chó",
+      "Cầu: 13 tấn"
+    ],
+    "basePrice": 370,
+    "images": [
+      "/image/mooc_san/IMG_8418.JPG",
+      "/image/mooc_san/IMG_8419.JPG",
+      "/image/mooc_san/IMG_8420.MOV",
+      "/image/mooc_san/IMG_8421.JPG",
+      "/image/mooc_san/IMG_8422.JPG"
+    ],
+    "comparisons": []
+  },
+  {
+    "id": "stt7-san-45f-14.3m",
+    "name": "Moóc sàn 45F 8 tấn (14.3m)",
+    "category": "Moóc sàn",
+    "specs": [
+      "Kích thước: 14300 x 2500 x 1500 (mm)",
+      "Tổng tải: 39050kg",
+      "Tự trọng: 8200kg",
+      "Tải trọng CPTGGT: 30850 kg",
+      "Chiều dài cơ sở: 8100 +1310+1310 (mm)",
+      "Lốp: 12.00R20-20pr HD628",
+      "Cầu: 16 tấn"
+    ],
+    "basePrice": 375,
+    "images": [
+      "/image/mooc_san/IMG_8418.JPG",
+      "/image/mooc_san/IMG_8419.JPG",
+      "/image/mooc_san/IMG_8420.MOV",
+      "/image/mooc_san/IMG_8421.JPG",
+      "/image/mooc_san/IMG_8422.JPG"
+    ],
+    "comparisons": []
+  },
+  {
+    "id": "stt8-san-45f-14.3m-9.5t",
+    "name": "Moóc sàn 45F 9.5 tấn (14.3m)",
+    "category": "Moóc sàn",
+    "specs": [
+      "Kích thước: 14300 x 2500 x 1500 (mm)",
+      "Tổng tải: 39050kg",
+      "Tự trọng: 9500kg",
+      "Tải trọng CPTGGT: 29550 kg",
+      "Chiều dài cơ sở: 8100 +1310+1310 (mm)",
+      "Lốp: 12.00R20-20pr HD628",
+      "Cầu: 16 tấn"
+    ],
+    "basePrice": 420,
+    "images": [
+      "/image/mooc_san/IMG_8418.JPG",
+      "/image/mooc_san/IMG_8419.JPG",
+      "/image/mooc_san/IMG_8420.MOV",
+      "/image/mooc_san/IMG_8421.JPG",
+      "/image/mooc_san/IMG_8422.JPG"
+    ],
+    "comparisons": []
+  },
+  {
+    "id": "stt9-xuong-thang-40f",
+    "name": "Moóc xương 12,4m 5.5 tấn (40F)",
+    "category": "Moóc xương",
+    "specs": [
+      "Kích thước: 12400 x 2500 x 1500 (mm)",
+      "Tổng tải: 39050kg",
+      "Tự trọng: 5500kg",
+      "Tải trọng CPTGGT: 33550 kg",
+      "Chiều dài cơ sở: 7420 +1310+1310",
+      "Lốp: 12.R22.5",
+      "Cầu: 13 tấn"
+    ],
+    "basePrice": 290,
+    "images": [
+      "/image/mooc_xuong/IMG_8502.JPG"
+    ],
+    "comparisons": []
+  },
+  {
+    "id": "stt10-xuong-thang-45f-ko-sam",
+    "name": "Moóc xương thẳng 45F",
+    "category": "Moóc xương",
+    "specs": [
+      "Kích thước: 14000 x 2500x 1580 (mm)",
+      "Tổng tải: 39050 Kg",
+      "Tự trọng: 6000 Kg",
+      "Tải trọng CPTGGT: 33050kg",
+      "Lốp: 12R22.5 hiệu Double coin",
+      "Sắt xi: cao 600mm",
+      "Chiều dài cơ sở: 7900 + 1310+ 1310 (mm)",
+      "Cầu: 13 tấn"
+    ],
+    "basePrice": 325,
+    "images": [
+      "/image/mooc_xuong/IMG_8502.JPG"
+    ],
+    "comparisons": []
+  },
+  {
+    "id": "stt11-xuong-thang-45f-co-sam",
+    "name": "Moóc xương 45F",
+    "category": "Moóc xương",
+    "specs": [
+      "Kích thước: 14000 x 2500x 1580 (mm)",
+      "Tổng tải: 39050 Kg",
+      "Tự trọng: 6900 Kg",
+      "Tải trọng CPTGGT: 32150kg",
+      "Lốp: 12.00R20 hiệu HD628",
+      "Sắt xi: cao 600mm",
+      "Chiều dài cơ sở: 7900 + 1310+ 1310 (mm)",
+      "Cầu: 16 tấn"
+    ],
+    "basePrice": 345,
+    "images": [
+      "/image/mooc_xuong/IMG_8502.JPG"
+    ],
+    "comparisons": []
+  },
+  {
+    "id": "stt12-xuong-coco-45f-co-sam",
+    "name": "Moóc xương cổ cò 45F",
+    "category": "Moóc xương",
+    "specs": [
+      "Kích thước: 14130 x 2500x 1500 (mm)",
+      "Tổng tải: 39050 Kg",
+      "Tự trọng: 6500 Kg",
+      "Tải trọng CPTGGT: 32550kg",
+      "Lốp: 12.00R20 lốp HD628",
+      "Sắt xi: cao 600mm",
+      "Chiều dài cơ sở: 7900 + 1310+ 1310 (mm)",
+      "Cầu: 16 tấn"
+    ],
+    "basePrice": 345,
+    "images": [
+      "/image/mooc_xuong/IMG_8502.JPG"
+    ],
+    "comparisons": []
+  },
+  {
+    "id": "stt13-xuong-coco-45f-ko-sam",
+    "name": "Moóc xương cổ cò 45F",
+    "category": "Moóc xương",
+    "specs": [
+      "Kích thước: 14130 x 2500x 1500 (mm)",
+      "Tổng tải: 39050 Kg",
+      "Tự trọng: 6000 Kg",
+      "Tải trọng CPTGGT: 33000kg",
+      "Lốp: 12R22.5 lốp Duoble coin",
+      "Sắt xi: cao 600mm",
+      "Chiều dài cơ sở: 7900 + 1310+ 1310 (mm)",
+      "Cầu: 13 tấn"
+    ],
+    "basePrice": 320,
+    "images": [
+      "/image/mooc_xuong/IMG_8502.JPG"
+    ],
+    "comparisons": []
+  },
+  {
+    "id": "stt14-lung-40f",
+    "name": "Mooc lửng 40F",
+    "category": "Moóc sàn",
+    "specs": [
+      "Kích thước: 12400 x 2500 x 2200 (mm)",
+      "Kích thước Lòng Thùng: 12220x2400x450 (mm)",
+      "Tổng tải: 39050 Kg",
+      "Tự trọng: 6800 Kg",
+      "Tải trọng CPTGGT: 32250 kg",
+      "Lốp: 12R22.5; hiệu Double coin",
+      "Chiều dài cơ sở: 7500 + 1310+ 1310 (mm)",
+      "Cầu: 13 tấn"
+    ],
+    "basePrice": 320,
+    "images": [
+      "/image/mooc_san/IMG_8418.JPG",
+      "/image/mooc_san/IMG_8419.JPG",
+      "/image/mooc_san/IMG_8420.MOV",
+      "/image/mooc_san/IMG_8421.JPG",
+      "/image/mooc_san/IMG_8422.JPG"
+    ],
+    "comparisons": []
+  },
+  {
+    "id": "stt15-ben-vuong-8.6t",
+    "name": "Mooc ben có săm 8.6 tấn",
+    "category": "Moóc ben",
+    "specs": [
+      "Kích thước: 9280 x 2500 x 3650 (mm)",
+      "Kích thước Lòng Thùng: 8600x2380x1240 (mm)",
+      "Tổng tải: 36900 Kg",
+      "Tự trọng: 8600 Kg",
+      "Tải trọng CPTGGT: 28300 kg",
+      "Lốp: 12.00R20 (20PR)",
+      "Chiều dài cơ sở: 4510 + 1310+ 1310 (mm)",
+      "Cầu: 13 tấn",
+      "Tháp ben: 214 (mm)"
+    ],
+    "basePrice": 540,
+    "images": [
+      "/image/mooc_ben/IMG_8516.jpg",
+      "/image/mooc_ben/IMG_8525.JPG",
+      "/image/mooc_ben/IMG_8531.MOV",
+      "/image/mooc_ben/IMG_8552.JPG",
+      "/image/mooc_ben/IMG_8569.JPG",
+      "/image/mooc_ben/IMG_8574.JPG",
+      "/image/mooc_ben/IMG_8578.JPG"
+    ],
+    "comparisons": []
+  },
+  {
+    "id": "stt9b-ben-vuong-9.5t",
+    "name": "Moóc ben 9.5 tấn",
+    "category": "Moóc ben",
+    "specs": [
+      "Kích thước: 9280 x 2500 x 3650 (mm)",
+      "Tổng tải: 37050kg",
+      "Tự trọng: 9500kg",
+      "Tải trọng CPTGGT: 27550 kg",
+      "Chiều dài cơ sở: 4500+1310+1310 (mm)",
+      "Lốp: 12.00R20",
+      "Cầu: 16 tấn"
+    ],
+    "basePrice": 590,
+    "images": [
+      "/image/mooc_ben/IMG_8516.jpg",
+      "/image/mooc_ben/IMG_8525.JPG",
+      "/image/mooc_ben/IMG_8531.MOV",
+      "/image/mooc_ben/IMG_8552.JPG",
+      "/image/mooc_ben/IMG_8569.JPG",
+      "/image/mooc_ben/IMG_8574.JPG",
+      "/image/mooc_ben/IMG_8578.JPG"
+    ],
+    "comparisons": []
+  },
+  {
+    "id": "stt16-ben-u-8.7t",
+    "name": "Mooc ben U",
+    "category": "Moóc ben",
+    "specs": [
+      "Kích thước: 9280 x 2500 x 3650 (mm)",
+      "Kích thước Lòng Thùng: 8350x2380x1320 (mm)",
+      "Tổng tải: 36900 Kg",
+      "Tự trọng: 8700 Kg",
+      "Tải trọng CPTGGT: 28200 kg",
+      "Lốp: 12.00R20",
+      "Chiều dài cơ sở: 4510 + 1310+ 1310 (mm)",
+      "Cầu: 13 tấn",
+      "Tháp ben: 214 (mm)"
+    ],
+    "basePrice": 540,
+    "images": [
+      "/image/mooc_ben/IMG_8516.jpg",
+      "/image/mooc_ben/IMG_8525.JPG",
+      "/image/mooc_ben/IMG_8531.MOV",
+      "/image/mooc_ben/IMG_8552.JPG",
+      "/image/mooc_ben/IMG_8569.JPG",
+      "/image/mooc_ben/IMG_8574.JPG",
+      "/image/mooc_ben/IMG_8578.JPG"
+    ],
+    "comparisons": []
+  },
+  {
+    "id": "stt17-ben-vuong-ko-sam",
+    "name": "Mooc ben không săm",
+    "category": "Moóc ben",
+    "specs": [
+      "Kích thước: 9280 x 2500 x 3650 (mm)",
+      "Kích thước Lòng Thùng: 8660x2380x1310 (mm)",
+      "Tổng tải: 36900 Kg",
+      "Tự trọng: 8000 Kg",
+      "Tải trọng CPTGGT: 28900 kg",
+      "Lốp: 12R22.5",
+      "Chiều dài cơ sở: 4510 + 1310+ 1310 (mm)",
+      "Cầu: 13 tấn",
+      "Tháp ben: 214 (mm)"
+    ],
+    "basePrice": 510,
+    "images": [
+      "/image/mooc_ben/IMG_8516.jpg",
+      "/image/mooc_ben/IMG_8525.JPG",
+      "/image/mooc_ben/IMG_8531.MOV",
+      "/image/mooc_ben/IMG_8552.JPG",
+      "/image/mooc_ben/IMG_8569.JPG",
+      "/image/mooc_ben/IMG_8574.JPG",
+      "/image/mooc_ben/IMG_8578.JPG"
+    ],
+    "comparisons": []
+  },
+  {
+    "id": "stt18-tec-bui-thep",
+    "name": "Téc chở bụi thép",
+    "category": "Téc",
+    "specs": [
+      "Kích thước: 11420 x 2500 x 3980 (mm)",
+      "Lòng thùng: 1280x2500x3280 (mm)",
+      "Tổng tải: 39060 Kg",
+      "Tự trọng: 9100 Kg",
+      "Tải trọng CPTGGT: 29960 kg",
+      "Cầu: 13 tấn",
+      "Động cơ: weichai 44kw new"
+    ],
+    "basePrice": 610,
+    "images": [],
+    "comparisons": []
+  },
+  {
+    "id": "stt19-tec-xang",
+    "name": "Téc chở xăng",
+    "category": "Téc",
+    "specs": [
+      "Kích thước: 11450 x 2500 x 3860 (mm)",
+      "Lòng thùng: 10740x2460x1940 (mm)",
+      "Tổng tải: 39050 Kg",
+      "Tự trọng: 8900 Kg",
+      "Tải trọng: 29980 kg",
+      "Cầu: 13 tấn",
+      "Thành thép: T700, 6 khoang (8,2-6-6-6-6-8,2)"
+    ],
+    "basePrice": "Liên hệ",
+    "images": [],
+    "comparisons": []
+  },
+  {
+    "id": "stt20-st-18.8m",
+    "name": "Mooc siêu trường 18,8m 4 trục",
+    "category": "Siêu trường",
+    "specs": [
+      "Kích thước: 18800 x 3200 x 1720mm",
+      "Cơ sở: 10370+1310+1310+1310 mm",
+      "Lốp: 4 trục xe lốp cỡ 285/70R19.5",
+      "Tổng tải: 73350Kg",
+      "Tự trọng: 13300kg",
+      "Tải trọng: 60050kg",
+      "Cổ: 3m"
+    ],
+    "basePrice": 755,
+    "images": [],
+    "comparisons": []
+  },
+  {
+    "id": "stt21-st-18m",
+    "name": "Mooc siêu trường 18m 3 trục",
+    "category": "Siêu trường",
+    "specs": [
+      "Kích thước: 18000 x 3200m x 1700m",
+      "Tổng tải: 54000kg",
+      "Tự trọng: 10000kg",
+      "Tải trọng: 44000kg",
+      "Lốp: 3 trục xe lốp cỡ 285/70R19.5",
+      "Cổ: 2.8m"
+    ],
+    "basePrice": 595,
+    "images": [],
+    "comparisons": []
+  },
+  {
+    "id": "stt22-st-18.2m",
+    "name": "Mooc siêu trường 18,2m 4 trục",
+    "category": "Siêu trường",
+    "specs": [
+      "Kích thước: 18200 x 3200 x 1700 mm",
+      "Cơ sở: 10370+1310+1310+1310 mm",
+      "Tổng tải: 75750kg",
+      "Tự trọng: 11000kg",
+      "Tải trọng: 64750kg",
+      "Cầu: 13 tấn",
+      "Lốp: 4 trục xe lốp cỡ 285/70R19.5",
+      "Cổ: 2.8m"
+    ],
+    "basePrice": 715,
+    "images": [],
+    "comparisons": []
+  },
+  {
+    "id": "stt23.1-san-thap-14m2",
+    "name": "Mooc sàn thấp 14m2",
+    "category": "Moóc sàn",
+    "specs": [
+      "Kích thước: 14200 x 2500m x 1650 mm",
+      "Cơ sở: 7700 +1310 +1310 mm",
+      "Tổng tải: 39000 kg",
+      "Tự trọng: 9500 Kg",
+      "Tải trọng: 29500 kg",
+      "Cầu: 16 tấn"
+    ],
+    "basePrice": 595,
+    "images": [
+      "/image/mooc_san/IMG_8418.JPG",
+      "/image/mooc_san/IMG_8419.JPG",
+      "/image/mooc_san/IMG_8420.MOV",
+      "/image/mooc_san/IMG_8421.JPG",
+      "/image/mooc_san/IMG_8422.JPG"
+    ],
+    "comparisons": []
+  },
+  {
+    "id": "stt23.2-san-thap-11m",
+    "name": "Sàn thấp 11m",
+    "category": "Moóc sàn",
+    "specs": [
+      "Kích thước: 11000x2500x1650mm",
+      "Tổng tải: 39050kg",
+      "Tự trọng: 8500kg",
+      "Tải trọng: 31050kg",
+      "Lốp: 295/60r22.5",
+      "Cầu: 16 tấn"
+    ],
+    "basePrice": 585,
+    "images": [
+      "/image/mooc_san/IMG_8418.JPG",
+      "/image/mooc_san/IMG_8419.JPG",
+      "/image/mooc_san/IMG_8420.MOV",
+      "/image/mooc_san/IMG_8421.JPG",
+      "/image/mooc_san/IMG_8422.JPG"
+    ],
+    "comparisons": []
+  },
+  {
+    "id": "stt24-fooc-san-4truc",
+    "name": "Fooc sàn 4 trục 18.6m",
+    "category": "Fooc",
+    "specs": [
+      "Kích thước: 18600 x 3300 x 1700 mm",
+      "Tổng tải: 75750kg",
+      "Tự trọng: 13200kg",
+      "Tải trọng: 62550kg",
+      "Cầu: 16 tấn"
+    ],
+    "basePrice": 750,
+    "images": [],
+    "comparisons": []
+  },
+  {
+    "id": "stt25.1-fooc-san-6truc",
+    "name": "Fooc sàn 6 trục 19m",
+    "category": "Fooc",
+    "specs": [
+      "Kích thước: 19000 x 3300 x 1700 mm",
+      "Tổng tải: 100600 kg",
+      "Tự trọng: 16500 kg",
+      "Tải trọng: 84100 kg",
+      "Cầu: 16 tấn"
+    ],
+    "basePrice": 890,
+    "images": [],
+    "comparisons": []
+  },
+  {
+    "id": "stt25.2-fooc-cho-may-3truc",
+    "name": "Phooc 4 trục chở máy 14.8m",
+    "category": "Fooc",
+    "specs": [
+      "Kích thước: 14800 x 3200 x 1760mm",
+      "Tổng tải: 68000kg",
+      "Tự trọng: 14000kg",
+      "Tải trọng: 54000kg",
+      "Lốp: 1200R20"
+    ],
+    "basePrice": 780,
+    "images": [],
+    "comparisons": []
+  },
+  {
+    "id": "stt26-fooc-4truc-19.9m",
+    "name": "Foọc 4 trục 19.9m rút 5m",
+    "category": "Fooc",
+    "specs": [
+      "Kích thước: 19900(+5m)x 3200 x 1760mm",
+      "Tổng tải: 92400kg",
+      "Tự trọng: 23800kg",
+      "Tải trọng: 68600kg",
+      "Cầu: 25 tấn"
+    ],
+    "basePrice": 1120,
+    "images": [],
+    "comparisons": []
+  },
+  {
+    "id": "stt27-fooc-4truc-20.5m",
+    "name": "Foọc 4 trục 20.5 rút 5m",
+    "category": "Fooc",
+    "specs": [
+      "Kích thước: 20500(+5m)x 3200 x 1760mm",
+      "Tổng tải: 91500 kg",
+      "Tự trọng: 25650kg",
+      "Tải trọng: 65850kg",
+      "Cầu: 25 tấn"
+    ],
+    "basePrice": 1200,
+    "images": [],
+    "comparisons": []
+  },
+  {
+    "id": "sttk-shacman-4-chan",
+    "name": "Xe ô tô tải tự đổ 8X4 cabin X3000",
+    "category": "Đầu kéo",
+    "specs": [
+      "Động cơ: WP10H.400E50",
+      "Lốp: 12.00R20",
+      "Năm sản xuất: 2026",
+      "Thùng dầu: 400L",
+      "Tỷ số truyền: 4.266"
+    ],
+    "basePrice": "Cập nhật trưởng nhóm",
+    "images": [],
+    "comparisons": []
+  }
+]

@@ -101,7 +101,7 @@ export default function ProductList({ role, filter, viewMode }: Props) {
                 </div>
               ) : (
                 <div className="text-2xl font-black text-slate-900 mt-auto">
-                  {product.basePrice}Tr VNĐ
+                  {typeof product.basePrice === "number" ? `${product.basePrice}Tr VNĐ` : product.basePrice}
                 </div>
               )}
             </div>
