@@ -149,15 +149,9 @@ export default function ProductCard({ product, role, index }: Props) {
             <p className="text-[10px] md:text-xs font-bold text-slate-400 uppercase tracking-widest mb-0.5">
               Giá bán dự kiến
             </p>
-            {role === "guest" ? (
-              <div className="text-base sm:text-lg md:text-xl font-bold text-blue-600 border-b-2 border-blue-200 inline-block">
-                Liên hệ 0988.376.666
-              </div>
-            ) : (
-              <div className="text-xl sm:text-2xl font-black text-slate-900 tracking-tighter">
-                {typeof displayPrice === "number" ? formatPrice(displayPrice) : displayPrice}
-              </div>
-            )}
+            <div className="text-xl sm:text-2xl font-black text-slate-900 tracking-tighter">
+              {typeof displayPrice === "number" ? formatPrice(displayPrice) : displayPrice}
+            </div>
 
             {/* Hidden admin mark up button */}
             {role === "owner" && (

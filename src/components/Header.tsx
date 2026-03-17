@@ -47,16 +47,15 @@ export default function Header({
       <header className="sticky top-0 z-40 bg-white/80 backdrop-blur-lg border-b border-black/5 shadow-sm pt-[env(safe-area-inset-top)]">
         <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <div className="shrink-0 flex items-center gap-3">
-              <div className="w-14 h-14 rounded-lg flex items-center justify-center overflow-hidden bg-white shrink-0">
-                <Image
-                  src="/logo/Logo_hatico.png"
-                  alt="HATICO Logo"
-                  width={40}
-                  height={40}
-                  className="w-full h-full object-contain p-0.5"
-                />
-              </div>
+            <div className="shrink-0 flex items-center">
+              <Image
+                src="/logo/Logo_hatico.png"
+                alt="HATICO Logo"
+                width={200}
+                height={64}
+                className="h-10 md:h-12 w-auto object-contain"
+                priority
+              />
             </div>
 
             <div className="flex items-center gap-6">
@@ -86,9 +85,10 @@ export default function Header({
 
               <button
                 onClick={() => setIsMenuOpen(true)}
-                className="lg:hidden p-2 text-slate-800 hover:bg-slate-100 rounded-lg transition-colors border border-slate-200 shadow-sm bg-white"
+                className="lg:hidden p-2 text-slate-800 hover:text-blue-600 transition-colors"
+                aria-label="Toggle menu"
               >
-                <IoMenuOutline className="w-6 h-6" />
+                <IoMenuOutline className="w-8 h-8" />
               </button>
             </div>
           </div>

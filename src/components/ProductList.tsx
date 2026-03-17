@@ -95,15 +95,9 @@ export default function ProductList({ role, filter, viewMode }: Props) {
               <h3 className="text-xl font-bold text-slate-900 mb-4 h-14 overflow-hidden">
                 {product.name}
               </h3>
-              {role === "guest" ? (
-                <div className="text-lg font-bold text-blue-600 mt-auto">
-                  Liên hệ
-                </div>
-              ) : (
-                <div className="text-2xl font-black text-slate-900 mt-auto">
-                  {typeof product.basePrice === "number" ? `${product.basePrice}Tr VNĐ` : product.basePrice}
-                </div>
-              )}
+              <div className="text-2xl font-black text-slate-900 mt-auto">
+                {typeof product.basePrice === "number" ? `${product.basePrice}Tr VNĐ` : product.basePrice}
+              </div>
             </div>
           ))}
         </div>
