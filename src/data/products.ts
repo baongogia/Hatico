@@ -8,6 +8,8 @@ export interface Product {
   basePrice: number | string; // Hỗ trợ "Liên hệ" hoặc "Đặt hàng"
   images: string[];
   comparisons: string[];
+  description?: string;
+  features?: string[];
 }
 
 import productsData from "./products.json";

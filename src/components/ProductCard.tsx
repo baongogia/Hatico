@@ -286,14 +286,38 @@ export default function ProductCard({ product, role, index }: Props) {
             </button>
           </div>{" "}
           <div className="p-4 text-slate-600 text-sm leading-relaxed max-h-[60vh] overflow-y-auto">
-            {/* Placeholder content for modals */}
+            {/* Real content from data models */}
             {activeModal === "info" && (
-              <p className="text-sm">
-                Đây là phiên bản xuất sắc nhất trong phân khúc{" "}
-                {product.category}. Dòng sản phẩm hứa hẹn đem lại hiệu năng vượt
-                trội và tiết kiệm chi phí vận hành cho doanh nghiệp. Liên hệ
-                trực tiếp HATICO để nhận hồ sơ năng lực chi tiết.
-              </p>
+              <div className="space-y-4">
+                {product.description && (
+                  <p className="text-sm text-slate-700 leading-relaxed font-medium bg-blue-50/50 p-3 rounded-lg border border-blue-100/50">
+                    {product.description}
+                  </p>
+                )}
+                {product.features && product.features.length > 0 && (
+                  <div className="space-y-3 mt-4">
+                    <h4 className="font-bold text-slate-800 text-xs uppercase tracking-wider">Đặc điểm nổi bật</h4>
+                    <ul className="space-y-2.5">
+                      {product.features.map((feature, idx) => (
+                        <li key={idx} className="flex items-start gap-2.5 group">
+                          <IoCheckmarkCircleOutline className="text-blue-500 w-5 h-5 shrink-0 mt-0.5 opacity-80 group-hover:opacity-100 transition-opacity" />
+                          <span className="text-sm text-slate-600 leading-relaxed group-hover:text-slate-800 transition-colors">
+                            {feature}
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+                {(!product.description && (!product.features || product.features.length === 0)) && (
+                  <p className="text-sm">
+                    Đây là phiên bản xuất sắc nhất trong phân khúc{" "}
+                    {product.category}. Dòng sản phẩm hứa hẹn đem lại hiệu năng vượt
+                    trội và tiết kiệm chi phí vận hành cho doanh nghiệp. Liên hệ
+                    trực tiếp HATICO để nhận hồ sơ năng lực chi tiết.
+                  </p>
+                )}
+              </div>
             )}
             {activeModal === "specs" && (
               <div className="space-y-3">
